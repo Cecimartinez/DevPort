@@ -6,4 +6,4 @@ Cada perfil de profesional de TI en la plataforma incluye una foto, una breve bi
 
 Los profesionales de TI pueden registrarse en la plataforma y crear su propio perfil, que luego será revisado y aprobado por el equipo de moderación antes de ser publicado en la plataforma. Los profesionales de TI también pueden actualizar su perfil con información adicional sobre su educación, certificaciones y logros laborales. 🥇 🎉
 
-La plataforma utiliza tecnologías modernas como React, Node.js y MongoDB, y se puede ejecutar en una variedad de dispositivos y navegadores web. El proyecto es de código abierto y los contribuyentes son bienvenidos para ayudar a mejorar la plataforma y agregar nuevas características. 💻 
+La plataforma utiliza tecnologías modernas como Tailwind, React, Node.js y MongoDB, y se puede ejecutar en una variedad de dispositivos y navegadores web. El proyecto es de código abierto y los contribuyentes son bienvenidos para ayudar a mejorar la plataforma y agregar nuevas características. 💻 
