@@ -1,8 +1,10 @@
+import Experience from "../../componentes/Experience/Experience";
+
 export const Skills = () => {
   return (
     <div>
       <div>
-        <h2>Page skills</h2>
+      <Experience/>
       </div>
     </div>
   );
