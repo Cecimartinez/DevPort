@@ -1,5 +1,5 @@
 export * from './Button/Button';
-export * from './Form/Form';
+export * from './Card/Card';
 export * from './ImageComponent/ImageComponent';
 export * from './Inpunt/Input';
 export * from './Items/Items';

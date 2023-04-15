@@ -1,7 +1,7 @@
 export const ROUTE_PATHS = {
   HOME: "home",
   CONTACTO: "contacto",
-  PORTAFOLIO: "portafolio",
+  PROFESIONALES: "profesionales",
   FORMACION: "formacion",
   SKILLS: "skills",
   SOBREMI: "sobremi",
