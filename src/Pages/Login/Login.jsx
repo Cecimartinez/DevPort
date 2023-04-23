@@ -1,17 +1,18 @@
-import {  Subtitulo } from "../../componentes";
+import { Subtitulo } from "../../componentes";
 import { FormLogin } from "./Components/FormLogin/FormLogin";
 
 export const Login = () => {
   return (
     <div className="flex items-center justify-center h-screen">
-      <Subtitulo />
       <div>
         <div className="flex flex-col w-full max-w-md px-4 py-8 ligth:bg-white rounded-lg shadow bg-[#535353] sm:px-6 md:px-8 lg:px-10">
-          <div className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white">
-            Login To Your Account
-          </div>
+          <Subtitulo
+            className="self-center mb-6 text-xl font-light text-gray-600 sm:text-2xl dark:text-white"
+            value="Login To Your Account"
+          />
+
           <div className="mt-8">
-            <FormLogin/>
+            <FormLogin />
           </div>
           <div className="flex items-center justify-center mt-6">
             <a
