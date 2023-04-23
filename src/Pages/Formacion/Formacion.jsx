@@ -1,8 +1,11 @@
+import FormacionComponente from "./Components/FormacionComponente"
+
+
 export const Formacion = () => {
   return (
     <div>
       <div>
-        <h2>Page formacion</h2>
+        <FormacionComponente/>
       </div>
     </div>
   );
