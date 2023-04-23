@@ -6,13 +6,13 @@ const FormacionComponente = () => {
             año: "2021 - 2024",
             institucion: 'UADE',
             titulo: 'Lic. en Sistemas',
-            descripcion: <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium unde aliquam neque minus facilis odio, odit, cupiditate fugiat porro, aliquid deleniti doloremque facere ullam est possimus. Sunt, vel quisquam.</p>
+            descripcion: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium unde aliquam neque minus facilis odio, odit, cupiditate fugiat porro, aliquid deleniti doloremque facere ullam est possimus. Sunt, vel quisquam."
         },
         {
             año: "2015 - 2020",
             institucion: 'Maria Montessori School',
             titulo: 'Bilingue - Bachiller Comunicación',
-            descripcion: <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium unde aliquam neque minus facilis odio, odit, cupiditate fugiat porro, aliquid deleniti doloremque facere ullam est possimus. Sunt, vel quisquam.</p>
+            descripcion: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium unde aliquam neque minus facilis odio, odit, cupiditate fugiat porro, aliquid deleniti doloremque facere ullam est possimus. Sunt, vel quisquam."
         }
     ]
 
