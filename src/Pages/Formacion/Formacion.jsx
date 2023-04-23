@@ -1,4 +1,4 @@
-import FormacionComponente from "../../componentes/Formacion/FormacionComponente";
+import FormacionComponente from "./Components/FormacionComponente"
 
 
 export const Formacion = () => {

@@ -1,4 +1,4 @@
-import Experience from "../../componentes/Skills/Experience";
+import Experience from "./Components/Experience";
 
 export const Skills = () => {
   return (
