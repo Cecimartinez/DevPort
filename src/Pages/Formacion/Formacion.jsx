@@ -1,4 +1,3 @@
-import React from "react";
 import FormacionItem from "./Components/FormacionItem"
 import Foto_CV from "../../assets/Foto_CV.jpg"
 
@@ -34,7 +33,7 @@ export const Formacion = () => {
 
   return (
     <div>
-      <div id="formacion" className="container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+      <div id="formacion" className="container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-20 p-4 ">
       <h1 className="text-4xl text-white font-bold border-b-4 border-[#564dfb] p-2 inline">
           Experiencia
         </h1>
