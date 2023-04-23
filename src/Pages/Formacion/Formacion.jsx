@@ -2,7 +2,7 @@ import React from "react";
 import FormacionItem from "./Components/FormacionItem"
 import Foto_CV from "../../assets/Foto_CV.jpg"
 
-const Formacion = () => {
+export const Formacion = () => {
   const experiencia = [
     {
       año: "2023 - Present",
@@ -75,5 +75,3 @@ const Formacion = () => {
     </div>
   );
 };
-
-export default Formacion;
