@@ -1,4 +1,3 @@
-
 import PropTypes from 'prop-types';
 
 const FormacionItem = ({ año, institucion, titulo, imagen}) => {
