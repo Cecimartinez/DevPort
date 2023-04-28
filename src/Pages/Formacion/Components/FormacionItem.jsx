@@ -1,20 +1,17 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const FormacionItem = ({ año, institucion, titulo, imagen}) => {
-    return (
-      <ol className="bg-white rounded-lg shadow-md p-6 m-5 flex items-center text-black">
-        <li className="flex w-full">
-          <div className="flex-shrink-0 mr-4">
-            <img src={imagen} className="w-30 h-16" />
-          </div>
-          <div>
-            <p className="text-lg font-semibold">{institucion}</p>
-            <p className="text-m font-semibold">{titulo}</p>
-          </div>
-          <p className="text-sm p-2 font-semibold bg-blue-900 rounded-md text-white ml-auto">{año}</p>
-        </li>
-      </ol>
-    );
+const FormacionItem = ({ año, institucion, titulo, imagen }) => {
+  return (
+    <section className="rounded-lg m-5 px-6 py-3 shadow-md flex items-center text-gray-600">
+        <div>
+          <p className="text-base font-semibold">{institucion}</p>
+          <p className="text-sm font-semibold">{titulo}</p>
+        </div>
+        <p className="text-xs p-4 font-semibold rounded-md  ml-auto">
+          {año}
+        </p>
+    </section>
+  );
 };
 
 FormacionItem.propTypes = {

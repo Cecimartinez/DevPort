@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const PersonalInfo = ({ name, surname, email, linkedin, phone, location, imageSrc, professionalProfile, strengths, languages }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 m-5 flex items-center text-black">
+  <div className="bg-white rounded-lg shadow-md p-4 m-3 flex items-center text-black">
     <div className="mr-6">
       <img src={imageSrc} className="w-32 h-32 rounded-full object-cover" />
     </div>

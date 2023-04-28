@@ -6,7 +6,7 @@ export const FormLogin = () => {
     <form action="#" autoComplete="off">
       <div className="flex flex-col mb-2">
         <div className="flex relative ">
-          <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+          <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-[#f5f4ff] border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
             <svg
               width="15"
               height="15"
@@ -21,9 +21,8 @@ export const FormLogin = () => {
           <Input
             type="email"
             id="sign-in-email"
-            className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-[#726AFF] focus:border-transparent"
+            className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-[#f5f4ff] text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-[#726AFF] focus:border-transparent"
             placeholder="Your email"
-            defaultValue="Your email"
 
           />
 
@@ -31,7 +30,7 @@ export const FormLogin = () => {
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex relative ">
-          <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-white border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
+          <span className="rounded-l-md inline-flex  items-center px-3 border-t bg-[#f5f4ff] border-l border-b  border-gray-300 text-gray-500 shadow-sm text-sm">
             <svg
               width="15"
               height="15"
@@ -46,9 +45,8 @@ export const FormLogin = () => {
           <Input
             type="password"
             id="sign-in-password"
-            className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-[#726AFF] focus:border-transparent"
+            className=" rounded-r-lg flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-[#f5f4ff] text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-[#726AFF] focus:border-transparent"
             placeholder="Your password"
-            value="Your password"
 
           />
         </div>
@@ -57,17 +55,17 @@ export const FormLogin = () => {
         <div className="flex ml-auto">
           <a
             href="#"
-            className="inline-flex text-xs font-thin text-gray-500 sm:text-sm dark:text-gray-100 hover:text-gray-700 dark:hover:text-white"
+            className="inline-flex text-xs font-thin text-gray-500 sm:text-sm hover:text-gray-700 dark:hover:text-white"
           >
             Forgot Your Password?
           </a>
         </div>
       </div>
-      <div className="flex justify-center ">
+      <div className="">
         <Button
           type="submit"
           value="Login"
-          className="py-2 px-4 w-full h-10  bg-[#564dfb] hover:bg-[#4339ff] focus:ring-[#726AFF] focus:ring-offset-purple-200 text-white transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+          className="py-2 px-4 w-full h-10  bg-[#564dfb] hover:bg-[#4339ff] focus:ring-[#726AFF] focus:ring-offset-purple-200 text-white transition ease-in duration-500 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg  "
         />
       </div>
     </form>

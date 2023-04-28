@@ -1,21 +1,20 @@
-import { ImageComponent } from "../../componentes";
+import { Nav, Subtitulo } from "../../componentes";
 import { FormContact } from "./Components/FormContact/FormContact";
 
 export const Contacto = () => {
   return (
-    <div className="flex justify-center w-screen h-screen">
-      <div className="form-container justify-center flex content-center items-center">
-        <div>
-          <FormContact className={""} />
-          <div className="flex justify-center">
-            <ImageComponent
-              className={`w-20, h-20 `}
-              href=""
-              src="../../img/cont.png"
-            />
-          </div>
-        </div>
-      </div>
+    <div
+      id="contacto"
+      className="container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-20 p-4"
+    >
+      <Subtitulo
+        className="text-base text-gray-600 text-center font-medium"
+        value="Fernando Longin"
+      />
+
+      <Nav/>
+
+      <FormContact />
     </div>
   );
 };

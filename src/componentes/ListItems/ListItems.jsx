@@ -5,7 +5,13 @@ export const ListItems = () => {
   return (
     <ul>
       {NAVITEMS.map((item) => (
-        <Items key={item.propName} label={item.label} to={item.propName} className="text-white flex lg:mr-7 mb-8 lg:mb-0" />
+        <Items
+          key={item.propName}
+          id={item.id}
+          label={item.label}
+          to={item.propName}
+          className=" item-nav font-medium text-[#414141] hover:text-black flex lg:mr-7 mb-8 lg:mb-0 relative text-lg tracking-wider"
+        />
       ))}
     </ul>
   );

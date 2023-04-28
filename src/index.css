@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
+
 }
   
 
@@ -14,10 +15,39 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background: #f5f4ff;
 }
 
-body {
-  background-color: #323232;
+#title-home{
+  font-family: 'Archivo Black', sans-serif;
+  background: #00fbff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00fbff, #734dff); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00fbff, #734dff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 }
 
+.item-nav{
+  padding: 0 10px;
 
+}
+
+.item-nav::after{
+  content: "";
+  position: absolute;
+  background-color: #734dff;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+
+}
+
+.item-nav:hover::after{
+  width: 100%;
+
+
+}

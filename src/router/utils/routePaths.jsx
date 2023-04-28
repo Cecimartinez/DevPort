@@ -5,5 +5,6 @@ export const ROUTE_PATHS = {
   FORMACION: "formacion",
   SKILLS: "skills",
   SOBREMI: "sobremi",
-  LOGIN: "login"
+  LOGIN: "login",
+  EXPERIENCE: "experience"
 };
