@@ -1,10 +1,13 @@
 export const ROUTE_PATHS = {
   HOME: "home",
-  CONTACTO: "contacto",
-  PROFESIONALES: "profesionales",
-  FORMACION: "formacion",
-  SKILLS: "skills",
-  SOBREMI: "sobremi",
   LOGIN: "login",
-  EXPERIENCE: "experience"
+  PROFESIONALES: "professionals",
+  PROFESSIONALPROLFILE: "professionalprofile",
+
+  SOBREMI: "aboutme",
+  FORMACION: "formacion",
+  CERTIFICATIONS: "  certifications",
+  SKILLS: "skills",
+  EXPERIENCE: "experience",
+  CONTACTO: "contact",
 };

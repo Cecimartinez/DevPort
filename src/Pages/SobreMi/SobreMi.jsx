@@ -1,9 +1,18 @@
 import PersonalInfo from "./Components/PersonalInfo";
 import Foto_CV from "../../assets/Foto_CV.jpg";
 import { Subtitulo } from "../../componentes/Subtitulo/Subtitulo";
-import { Nav } from "../../componentes";
+import { professionals } from "../../Mock/professionalsMock";
+import { useParams} from "react-router-dom";
 
 export const SobreMi = () => {
+  const { id: professionalId } = useParams();
+  console.log(professionalId);
+  const professionalInfo = professionals.find(
+    (professional) => professional.professionalId === professionalId
+  );
+
+  console.log(professionalInfo, "professional");
+
   return (
     <div
       id="sobremi"
@@ -11,30 +20,23 @@ export const SobreMi = () => {
     >
       <Subtitulo
         className="text-base text-gray-600 text-center font-medium"
-        value="Fernando Longin"
+        value=""
       />
-      <Nav />
-      {/*<PersonalInfo name="Cecilia Ayelen" surname="Martinez" email="" linkedin="" phone="" location="Buenos Aires" imageSrc={Foto_CV} professionalProfile="" strengths="" languages=""/>*/}
-      <PersonalInfo
-        name="Fernando José"
-        surname="Longin"
-        email="ferlongin@hotmail.com"
-        linkedin="www.linkedin.com/in/fernando-josé-longin"
-        phone="+54 9 11 5586-5874"
-        location="Buenos Aires"
-        imageSrc={Foto_CV}
-        professionalProfile="Software Analyst Trainee specialized in agile methodologies"
-        strengths={["Agile Software Development", "Scrum Framework"]}
-        languages={[
-          "Spanish - Native",
-          "English - Bilingual",
-          "Portugese - Full Professional Proficiency",
-        ]}
-        certifications={[
-          { title: "React Nanodegree", institution: "Udacity", year: "2021" },
-          { title: "Vue.js Course", institution: "Platzi", year: "2018" },
-        ]}
-      />
+      {professionalInfo && (
+        <PersonalInfo
+          name={professionalInfo?.name}
+          email={professionalInfo?.email}
+          linkedin={professionalInfo?.linkedin}
+          phone={professionalInfo?.phone}
+          location={professionalInfo?.city}
+          imageSrc={Foto_CV}
+          professionalProfile={professionalInfo?.about}
+          strengths={professionalInfo?.strengths}
+          languages={professionalInfo?.languages}
+          certifications={professionalInfo?.certifications}
+        />
+      )}
+      
     </div>
   );
 };

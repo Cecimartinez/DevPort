@@ -17,7 +17,7 @@ export const Home = () => {
         </h1>
         <p className="text-3xl font-light mt-5 ">The land of opportunity</p>
         <Link
-          to="/profesionales"
+          to="/professionals"
           className="px-5 py-2 inline-block bg-[#564dfb] hover:bg-[#4339ff] focus:ring-[#726AFF] text-white transition-colors mt-10 rounded-full hover:animate-pulse"
           href=""
         >

@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 
-export const PageItems = ({  className, to , label}) => {
+export const PageItems = ({ className, to, label }) => {
+  const param = useParams();
+  console.log(param);
   return (
     <>
       <li className=" lg:inline-flex">
-        <Link to={`/${to || null}`} className={className} >{label}
+        <Link to={`${to}`} className={className}>
+          {label}
         </Link>
       </li>
     </>
