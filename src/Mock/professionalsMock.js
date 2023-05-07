@@ -3,6 +3,7 @@ export const professionals = [
     professionalId: "cecilia-martinez",
     name: "Cecilia MArtínez",
     role: "Software developer",
+    password:"1234",
     profession: "Ingeniería de software",
     linkedin:"",
     about: "dscjsdcdsdcmms",
@@ -44,6 +45,7 @@ export const professionals = [
   {
     professionalId: "fernando-longin",
     name: "Fernando José Longin",
+    password:"1234",
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
     about: "Estudiante en Uade | Trainee at ExxonMobil",

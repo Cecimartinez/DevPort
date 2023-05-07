@@ -10,4 +10,6 @@ export const ROUTE_PATHS = {
   SKILLS: "skills",
   EXPERIENCE: "experience",
   CONTACTO: "contact",
+
+  CONTACTTABLE:"contact-table"
 };

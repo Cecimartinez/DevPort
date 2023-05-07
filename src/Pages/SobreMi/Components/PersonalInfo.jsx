@@ -14,9 +14,13 @@ const PersonalInfo = ({
   languages,
 }) => (
   <div className="bg-white rounded-lg shadow-md p-4 m-3 flex items-center text-black">
+
+    
     <div className="mr-6">
       <img src={imageSrc} className="w-32 h-32 rounded-full object-cover" />
     </div>
+
+
     <div>
       <h2 className="text-lg font-medium ">{name} </h2>
       <p className="text-sm font-medium ">{location}</p>

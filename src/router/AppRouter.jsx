@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes, Outlet } from "react-router-dom";
+import { Navigate, Route, Routes} from "react-router-dom";
 import { ROUTE_PATHS } from "./utils/routePaths";
 import { Home } from "../Pages/Home/Home";
 import { SobreMi } from "../Pages/SobreMi/SobreMi";
@@ -11,6 +11,7 @@ import { Experience } from "../Pages/Experience/Experience";
 import { ProfessionalProfile } from "../Pages/ProfessionalProfile/ProfessionalProfile";
 import { element } from "prop-types";
 import { Certifications } from "../Pages/Certifications/Certifications";
+import { ContactTable } from "../Pages/ContactTable/ContactTable";
 
 export const AppRouter = () => {
   return (
@@ -28,6 +29,8 @@ export const AppRouter = () => {
           <Route path={`${ROUTE_PATHS.EXPERIENCE}`} element={<Experience />} />
           <Route path={`${ROUTE_PATHS.CONTACTO}`} element={<Contacto />} />
         </Route>
+
+        <Route path={`${ROUTE_PATHS.CONTACTTABLE}`} element={<ContactTable/>} />
 
         <Route path="/*" element={<Navigate to={""} />} />
       </Routes>
