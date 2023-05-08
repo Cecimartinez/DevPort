@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export const ProfesionalCard = ({ fullname, role, src, label, to, className }) => {
   return (
-    <div className={`flex flex-col sm:flex-col md:flex-row w-full h-full gap-2 py-5 px-8 shadow-md rounded-xl m-7 items-center justify-center ${className}`}>
+    <div className={`flex flex-col sm:flex-col md:flex-row w-full h-full gap-2 py-5 shadow-md rounded-xl m-7 items-center justify-center ${className}`}>
       <div className="flex items-center justify-center sm:w-full md:w-3/4">
         <ImageComponent className={`w-32 h-32`} href="" src={src} />
       </div>

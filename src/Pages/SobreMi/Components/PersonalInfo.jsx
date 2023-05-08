@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 import { Outlet } from "react-router-dom";
 
 const PersonalInfo = ({
@@ -13,17 +11,17 @@ const PersonalInfo = ({
   strengths,
   languages,
 }) => (
-  <div className="bg-white rounded-lg shadow-md p-4 m-3 sm:flex sm:items-center text-black">
+  <div className="bg-white rounded-lg shadow-md p-4 my-3 sm:flex sm:items-center ">
 
-    <div className="sm:mr-6 mb-4 sm:mb-0">
+    <div className=" mb-1 sm:mb-0">
       <img src={imageSrc} className="w-32 h-32 rounded-full object-cover" />
     </div>
 
     <div>
-      <h2 className="text-lg font-medium mb-2 sm:mb-0">{name} </h2>
+      <h2 className="text-lg font-semibold p-1 mb-2 sm:mb-0 text-[#53f]">{name} </h2>
       <p className="text-sm font-medium mb-2">{location}</p>
       <div className="mt-4">
-        <h3 className="text-m font-medium ">Contact Information</h3>
+        <h3 className="text-m font-medium text-[#53f]">Contact Information</h3>
         <div className="mt-2">
           <p className="text-sm">
             <span className="font-medium">Email:</span> {email}
@@ -40,17 +38,17 @@ const PersonalInfo = ({
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-m font-medium ">Professional Profile</h3>
+        <h3 className="text-sm font-medium text-[#53f] ">Professional Profile</h3>
         <p className="text-sm ">{professionalProfile}</p>
       </div>
       <div className="mt-4">
-        <h3 className="text-m font-medium ">Strengths</h3>
+        <h3 className="text-m font-medium text-[#53f] ">Strengths</h3>
         <ul className="list-disc list-inside text-sm ">
           <li>{strengths}</li>
         </ul>
       </div>
-      <div className="mt-4">
-        <h3 className="text-m font-medium ">Languages</h3>
+      <div className="mt-2">
+        <h3 className="text-sm font-medium text-[#53f]">Languages</h3>
         <ul className="list-disc list-inside text-sm ">
           {languages.map((language) => (
             <li key={language.language}>{language.language}</li>

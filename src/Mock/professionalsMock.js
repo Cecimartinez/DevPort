@@ -1,12 +1,11 @@
 export const professionals = [
   {
     professionalId: "cecilia-martinez",
-    name: "Cecilia MArtínez",
-    role: "Software developer",
-    password:"1234",
+    name: "Cecilia Martinez",
+    role: "Developer Fullstack",
     profession: "Ingeniería de software",
-    linkedin:"",
-    about: "dscjsdcdsdcmms",
+    linkedin:"https://www.linkedin.com/in/cecilia-mart%C3%ADnez-%E2%9A%9B%EF%B8%8F-%F0%9F%9A%80-7420a524a",
+    about: "Soy una programadora fullstack apasionada por el mundo de la tecnología y la programación. Me encanta explorar nuevas herramientas y tecnologías, buscando mejorar mi habilidad para crear soluciones innovadoras y de alta calidad. Mi experiencia en desarrollo web y en múltiples lenguajes de programación me ha permitido abordar proyectos desafiantes y encontrar soluciones creativas para cumplir con los requerimientos de los clientes.",
     email: "martinezcecilia2707@gmail.com",
     phone: "+54 9 11 38468128",
     city: "Ciudad Autonoma de Buenos Aires",
@@ -23,10 +22,10 @@ export const professionals = [
     ],
     experience: [
       {
-        period: "2020 - actualidad",
-        company: "Empresa A",
-        position: "Desarrollador web",
-        description: "Desarrollo de aplicaciones web para clientes",
+        period: "2022 - actualidad",
+        company: "Frelance",
+        position: "Desarrolladora Frontend",
+        description: "Desarrollo de aplicaciones web ",
         milestones: [
           "Lanzamiento de la plataforma de comercio electrónico para el cliente X",
           "Implementación de un sistema de autenticación y autorización de usuarios",
@@ -40,12 +39,14 @@ export const professionals = [
       "Node.js",
       "HTML/CSS",
       "SQL",
+      "Python",
+      "Java",
+      "Tailwind"
     ],
   },
   {
     professionalId: "fernando-longin",
     name: "Fernando José Longin",
-    password:"1234",
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
     about: "Estudiante en Uade | Trainee at ExxonMobil",
