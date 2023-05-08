@@ -1,8 +1,7 @@
 import { FormLogin } from "./Components/FormLogin/FormLogin";
-
 export const Login = () => {
   return (
-    <div id="login" className="flex items-center justify-center h-screen bg-gradient-to-br from-violet-600 to-teal-300 ">
+    <div id="login" className="flex items-center justify-center h-screen bg-gradient-to-br from-violet-600 to-teal-300 overflow-y-auto">
       <div className="mx-auto max-w-screen-xl px-4 py-4 sm:px-6 lg:px-8">
         <section className="mx-auto max-w-lg">
           <h1 id="title-login" className="text-center text-2xl  text-white font-black sm:text-4xl ">

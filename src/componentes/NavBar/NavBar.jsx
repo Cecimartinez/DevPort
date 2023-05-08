@@ -28,13 +28,13 @@ export const NavBar = () => {
             
           </div>
 
-          <div className="flex lg:hidden">
+          {/* <div className="flex lg:hidden">
             <ImageComponent
               src="../../img/menu.svg"
               className="h-6 w-6 text "
               onClick={toggleMenu}
             />
-          </div>
+          </div> */}
           <div
             className={`lg:flex  flex-grow lg:bg-none  justify-between absolute lg:relative lg:top-0  left-0  top-20 w-full lg:w-auto items-center py-14 lg:py-0 px-8 sm:px-24 lg:px-0 ${
               isNavOpen ? "" : "hidden"

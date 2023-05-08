@@ -1,7 +1,8 @@
 import FormacionItem from "./Components/FormacionItem";
+
 export const Formacion = () => {
   return (
-    <div className="container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-20 p-4">
+    <div className="container mx-auto px-4  max-w-[1040px] m-auto  h-full overflow-y-auto " >
       <FormacionItem
         año=" 2023 - Present"
         institucion=" UADE "

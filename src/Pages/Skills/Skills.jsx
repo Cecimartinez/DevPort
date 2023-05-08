@@ -24,7 +24,7 @@ export const Skills = () => {
   };
   
   return (
-    <div style={{ width: "50%", margin: "0 auto", marginTop: "100px" }}>
+    <div style={{ width: "50%", margin: "0 auto", marginTop: "100px" }} className=" h-full overflow-y-auto ">
       <Slider {...settings}>
       <div><Experience /></div>
       <div><Experience /></div>

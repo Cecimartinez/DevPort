@@ -3,8 +3,8 @@ import { Nav } from "../../componentes";
 
 export const ProfessionalProfile = () => {
   return (
-    <div className="">
-      <header className="flex justify-center px-5 py-3">
+    <div className=" w-screen  h-screen overflow-y-auto ">
+      <header className="flex justify-center ">
         <Nav />
       </header>
       <Outlet />

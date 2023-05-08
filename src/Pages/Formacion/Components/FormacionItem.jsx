@@ -31,11 +31,9 @@ FormacionItem.propTypes = {
 export default FormacionItem;
 */
 
-import React from "react";
-
 const FormacionItem = ({ año, institucion, titulo, imagen }) => {
   return (
-    <div className="w-full px-6 py-4 my-2 rounded-md shadow-md md:flex">
+    <div className="w-full px-6 my-2 rounded-md shadow-md md:flex  h-full overflow-y-auto ">
       <div className="md:w-1/6 md:pr-4 md:flex-shrink-0">
         <div className="bg-gray-300 rounded-full w-20 h-20 flex items-center justify-center mx-auto">
           {imagen}
