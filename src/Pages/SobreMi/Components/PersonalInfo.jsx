@@ -11,14 +11,14 @@ const PersonalInfo = ({
   strengths,
   languages,
 }) => (
-  <div className="bg-white rounded-lg shadow-md p-4 my-3 sm:flex sm:items-center ">
+  <div className="bg-white rounded-lg shadow-md p-4 my-3 sm:flex sm:items-center">
 
-    <div className=" mb-1 sm:mb-0">
-      <img src={imageSrc} className="w-32 h-32 rounded-full object-cover" />
+    <div className="sm:mr-6 mb-4 sm:mb-0 flex-shrink-0">
+      <img src={imageSrc} className="w-32 h-32 object-cover rounded-full" alt={`Profile of ${name}`} />
     </div>
 
     <div>
-      <h2 className="text-lg font-semibold p-1 mb-2 sm:mb-0 text-[#53f]">{name} </h2>
+      <h2 className="text-lg font-semibold mb-2 sm:mb-0 text-[#53f]">{name} </h2>
       <p className="text-sm font-medium mb-2">{location}</p>
       <div className="mt-4">
         <h3 className="text-m font-medium text-[#53f]">Contact Information</h3>
@@ -59,18 +59,5 @@ const PersonalInfo = ({
     <Outlet />
   </div>
 );
-
-// PersonalInfo.propTypes = {
-//   name: PropTypes.string.isRequired,
-//   surname: PropTypes.string.isRequired,
-//   email: PropTypes.string.isRequired,
-//   linkedin: PropTypes.string.isRequired,
-//   phone: PropTypes.string.isRequired,
-//   location: PropTypes.string.isRequired,
-//   imageSrc: PropTypes.string.isRequired,
-//   professionalProfile: PropTypes.string.isRequired,
-//   strengths: PropTypes.arrayOf(PropTypes.string),
-//   languages: PropTypes.arrayOf(PropTypes.string),
-// };
 
 export default PersonalInfo;

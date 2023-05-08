@@ -1,5 +1,7 @@
 export const professionals = [
   {
+
+    /* ABOUT ME */ 
     professionalId: "cecilia-martinez",
     name: "Cecilia Martinez",
     role: "Developer Fullstack",
@@ -9,10 +11,13 @@ export const professionals = [
     email: "martinezcecilia2707@gmail.com",
     phone: "+54 9 11 38468128",
     city: "Ciudad Autonoma de Buenos Aires",
+    strengths: "Activa, aprendizaje ágil, trabajo en equipo, resolución de problemas",
     languages: [
       { language: "Español", level: "Nativo" },
       { language: "Inglés", level: "Intermedio" },
     ],
+
+    /* CERTIFICACIONES */
     certifications: [
       {
         title: "Certificación en Desarrollo Web",
@@ -20,19 +25,22 @@ export const professionals = [
         year: 2021,
       },
     ],
+
+    /* FORMACION */
     experience: [
       {
         period: "2022 - actualidad",
         company: "Frelance",
         position: "Desarrolladora Frontend",
-        description: "Desarrollo de aplicaciones web ",
-        milestones: [
-          "Lanzamiento de la plataforma de comercio electrónico para el cliente X",
-          "Implementación de un sistema de autenticación y autorización de usuarios",
+        imagen: "",
+        tags: [
+          { tag: "Metodologias Agiles"},
+          { tag: "Desarrollo de Software"},
         ],
       },
     ],
-    strengths: "Activa, aprendizaje ágil, trabajo en equipo, resolución de problemas",
+
+    /* SKILLS */
     skills: [
       "JavaScript",
       "React",
@@ -44,7 +52,11 @@ export const professionals = [
       "Tailwind"
     ],
   },
+
+
   {
+
+    /* ABOUT ME */ 
     professionalId: "fernando-longin",
     name: "Fernando José Longin",
     role: "Software Analyst Trainee",
@@ -54,10 +66,14 @@ export const professionals = [
     email: "ferlongin@hotmail.com",
     phone: "+54 9 11 5586-5874",
     city: "Buenos Aires",
+    strengths: "Metodologías Agiles, Analisis de Software y Desarrollo Ágil de Software.",
     languages: [
       { language: "Español", level: "Nativo" },
       { language: "Inglés", level: "Avanzado" },
     ],
+
+
+    /* CERTIFICACIONES */
     certifications: [
       {
         title: "Certificación en Data Science",
@@ -65,20 +81,24 @@ export const professionals = [
         year: 2020,
       },
     ],
+
+
+    /* FORMACION */
     experience: [
       {
-        period: "2018 - actualidad",
-        company: "Empresa B",
-        position: "Analista de datos",
-        description:
-          "Análisis y visualización de datos para tomar decisiones de negocio",
-        milestones: [
-          "Implementación de un modelo predictivo de ventas",
-          "Optimización del proceso de recolección de datos",
+        period: "2022 - actualidad",
+        company: "Frelance",
+        position: "Desarrolladora Frontend",
+        workimage: "",
+        tags: [
+          { tag: "Metodologias Agiles"},
+          { tag: "Desarrollo de Software"},
         ],
       },
     ],
-    strengths: "Metodologías Agiles, Analisis de Software y Desarrollo Ágil de Software.",
+    
+
+    /* SKILLS */
     skills: [
       "Python",
       "R",

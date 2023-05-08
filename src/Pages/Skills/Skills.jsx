@@ -18,6 +18,7 @@ export const Skills = () => {
         settings: {
           slidesToShow: 2,
           dots: false,
+          autoplaySpeed: 100,
         },
       },
     ],
