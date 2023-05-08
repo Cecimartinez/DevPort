@@ -12,10 +12,18 @@ export const Certifications = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 640, // break on phone size
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
-  
+
   return (
-    <div style={{ width: "80%", margin: "0 auto", marginTop: "100px" }}>
+    <div className="max-w-screen-lg mx-auto mt-12 px-4 sm:px-6 lg:px-8">
       <Slider {...settings}>
         <div><CardCertifications /></div>
         <div><CardCertifications /></div>
@@ -25,6 +33,5 @@ export const Certifications = () => {
         <div><CardCertifications /></div>
       </Slider>
     </div>
-
   );
 };

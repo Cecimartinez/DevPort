@@ -4,27 +4,27 @@ import { Title } from "../../../componentes/Title/Title";
 
 export const CardCertifications = () => {
   return (
-    <div className="  flex  shadow-lg mx-3 my-3  sm:p-4 sm:h-52 rounded-2xl sm:flex-row ">
-      <section className=" h-36 sm:h-full sm:w-52 rounded-xl ">
+    <div className="flex flex-col sm:flex-row shadow-lg mx-3 my-3 sm:p-4 sm:h-52 rounded-2xl">
+      <section className="w-full sm:w-52 h-36 sm:h-full rounded-xl">
         <ImageComponent
-          className="w-auto h-full"
+          className="w-full h-full object-cover"
           href=""
           src="../../img/cecicash.png"
         />
       </section>
 
-      <main className="flex flex-col   items-center">
-        <header className="flex items-center flex-col justify-center py-5">
+      <main className="flex flex-col justify-center p-4 sm:p-0">
+        <header className="py-2 sm:py-0">
           <Title
-            className="w-full text-center font-semibold text-lg px-3 py-2"
+            className="text-lg font-semibold text-center sm:text-left"
             value="Fullstack Python"
           />
           <Subtitulo
-            className="w-full  text-center items-center py-1 px-3 font-semibold  text-[#5a5a5a]"
+            className="text-sm font-semibold text-center sm:text-left text-[#5a5a5a]"
             value="Codo a codo"
           />
         </header>
-        <p className="w-auto bg-gray-200 rounded-full text-center py-1 px-4 text-sm font-semibold text-[#5a5a5a]">
+        <p className="bg-gray-200 rounded-full text-center py-1 px-4 text-sm font-semibold text-[#5a5a5a] self-center mt-2 sm:mt-auto">
           March 2022
         </p>
       </main>

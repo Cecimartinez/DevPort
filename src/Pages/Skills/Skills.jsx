@@ -12,6 +12,15 @@ export const Skills = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 640, // break on phone size
+        settings: {
+          slidesToShow: 2,
+          dots: false,
+        },
+      },
+    ],
   };
   
   return (
