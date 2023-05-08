@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import { Button } from "../../../../componentes/Button/Button";
 
 export const FormLogin = () => {
   return (
-    <form className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8">
+    <form className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-[#f3f4ff]">
       <p className="text-center text-lg font-medium">Sign in to your account</p>
 
     
@@ -28,9 +29,9 @@ export const FormLogin = () => {
           />
         </div>
 
-      <Button id="btn-login" className="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white" value="Sign in" />
-
-
+      <ul className="text-center">
+        <Link to="/contact-table" id="btn-login" className="block w-full rounded-lg bg-indigo-600 px-5 py-3 text-sm font-medium text-white">Sign In</Link>
+      </ul>
 
     </form>
   );

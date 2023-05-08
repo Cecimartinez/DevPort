@@ -8,7 +8,7 @@ export const ROUTE_PATHS = {
   FORMACION: "formacion",
   CERTIFICATIONS: "  certifications",
   SKILLS: "skills",
-  EXPERIENCE: "experience",
+  PROJECTS: "projects",
   CONTACTO: "contact",
 
   CONTACTTABLE:"contact-table"

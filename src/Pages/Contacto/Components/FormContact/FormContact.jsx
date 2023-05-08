@@ -1,57 +1,74 @@
-import { Input, Subtitulo, Button } from "../../../../componentes";
-
-// optimizar el codigo de este unmountComponentAtNode, utilizar los componente locales o generales q sean necesarios
-
 export const FormContact = () => {
   return (
-      <form>
-        <div className=" bg-white w-full max-w-2xl px-5 py-10 m-auto mt-10  rounded-lg shadow">
-          <div className="mb-6 text-2xl font-light text-center text-black">
-            Contact us !
+    <>
+      <form className="w-full max-w-lg  py-4 px-5 rounded-md ">
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            >
+              First Name
+            </label>
+            <input
+              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+              id="grid-first-name"
+              type="text"
+              placeholder="Jane"
+            />
           </div>
-          <div className="grid max-w-xl grid-cols-2 gap-4 m-auto">
-            <div className="col-span-2 lg:col-span-1">
-              <div className=" relative ">
-                <input
-                  type="text"
-                  id="contact-form-name"
-                  className=" rounded-lg border-transparent flex-1 bg-white appearance-none border border-gray-300 w-full py-2 px-4  text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  placeholder="Name"
-                />
-              </div>
-            </div>
-            <div className="col-span-2 lg:col-span-1">
-              <div className=" relative ">
-                <input
-                  type="text"
-                  id="contact-form-email"
-                  className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4  text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 bg-[#fff] focus:ring-purple-600 focus:border-transparent"
-                  placeholder="email"
-                />
-              </div>
-            </div>
-            <div className="col-span-2">
-              <label className="text-gray-700" >
-                <textarea
-                  className="flex-1 w-full px-4 py-2 text-base bg-[#fff] text-gray-700 placeholder-gray-400 border border-gray-300 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                  id="comment"
-                  placeholder="Enter your comment"
-                  name="comment"
-                  rows="5"
-                  cols="40"
-                ></textarea>
-              </label>
-            </div>
-            <div className="col-span-2 text-right">
-              <button
-                type="submit"
-                className="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
-              >
-                Send
-              </button>
-            </div>
+          <div className="w-full md:w-1/2 px-3">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            >
+              Last Name
+            </label>
+            <input
+              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="grid-last-name"
+              type="text"
+              placeholder="Doe"
+            />
+          </div>
+        </div> 
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full px-3">
+            <label
+              className="block uppercase tracking-wide  text-gray-700 text-xs font-bold mb-2"
+            >
+              E-mail
+            </label>
+            <input
+              className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+              id="email"
+              type="email"
+            />
           </div>
         </div>
+        <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="w-full px-3">
+            <label
+              className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+            >
+              Message
+            </label>
+            <textarea
+              className=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-24 resize-none"
+              id="message"
+            ></textarea>
+          </div>
+        </div>
+        <div className="md:flex md:items-center ">
+          <div className="md:w-1/3 ">
+            <button
+              className="shadow bg-[#53ff] hover:bg-[#5e3eff] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-md"
+              type="submit"
+            >
+              Send
+            </button>
+          </div>
+          <div className="md:w-2/3"></div>
+        </div>
       </form>
+    </>
   );
 };

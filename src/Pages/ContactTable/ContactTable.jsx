@@ -2,7 +2,7 @@ export const ContactTable = () => {
   return (
     <div
       id="profesionales"
-      className="flex flex-col px-20 py-10 items-center h-screen w-screen"
+      className="flex flex-col px-5 md:px-20 py-10 items-center h-screen w-screen"
     >
       <div className="container max-w-3xl px-4 mx-auto sm:px-8">
         <div className="py-8">
@@ -13,25 +13,25 @@ export const ContactTable = () => {
                   <tr>
                     <th
                       scope="col"
-                      className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
                     >
                       User
                     </th>
                     <th
                       scope="col"
-                      className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
                     >
                       Role
                     </th>
                     <th
                       scope="col"
-                      className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
                     >
                       Created at
                     </th>
                     <th
                       scope="col"
-                      className="px-5 py-3 text-sm font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left text-gray-800 uppercase bg-white border-b border-gray-200"
                     >
                       status
                     </th>
@@ -39,11 +39,11 @@ export const ContactTable = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="px-5 py-5 text-sm bg-white border-b border-gray-200">
+                    <td className="px-4 py-4 md:px-5 md:py-5 text-sm md:text-base bg-white border-b border-gray-200">
                       <div className="flex items-center">
                         <div className="flex-shrink-0">
                           <a href="#" className="relative block">
-                          <span className="material-symbols-outlined">account_circle</span>
+                            <span className="material-symbols-outlined">account_circle</span>
                           </a>
                         </div>
                         <div className="ml-3">

@@ -7,11 +7,10 @@ import { Formacion } from "../Pages/Formacion/Formacion";
 import { Skills } from "../Pages/Skills/Skills";
 import { Login } from "../Pages/Login/Login";
 import { Profesionales } from "../Pages/Profesionales/Profesionales";
-import { Experience } from "../Pages/Experience/Experience";
 import { ProfessionalProfile } from "../Pages/ProfessionalProfile/ProfessionalProfile";
-import { element } from "prop-types";
 import { Certifications } from "../Pages/Certifications/Certifications";
 import { ContactTable } from "../Pages/ContactTable/ContactTable";
+import { Projects } from "../Pages/Projects/Projects";
 
 export const AppRouter = () => {
   return (
@@ -26,7 +25,7 @@ export const AppRouter = () => {
           <Route path={`${ROUTE_PATHS.FORMACION}`} element={<Formacion />} />
           <Route path={`${ROUTE_PATHS.CERTIFICATIONS}`} element={<Certifications/>}/>
           <Route path={`${ROUTE_PATHS.SKILLS}`} element={<Skills />} />
-          <Route path={`${ROUTE_PATHS.EXPERIENCE}`} element={<Experience />} />
+          <Route path={`${ROUTE_PATHS.PROJECTS}`} element={<Projects/>} />
           <Route path={`${ROUTE_PATHS.CONTACTO}`} element={<Contacto />} />
         </Route>
 
