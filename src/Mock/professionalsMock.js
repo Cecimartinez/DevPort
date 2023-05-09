@@ -20,9 +20,27 @@ export const professionals = [
     /* CERTIFICACIONES */
     certifications: [
       {
-        title: "Certificación en Desarrollo Web",
-        institution: "Universidad de Buenos Aires",
-        year: 2021,
+        title: "Fullstack Python",
+        institution: "coco a codo",
+        year: 2022,
+      },
+
+      {
+        title: "Fullstack React",
+        institution: "coco a codo",
+        year: 2022,
+      },
+
+      {
+        title: "React",
+        institution: "Openbootcamp",
+        year: 2022,
+      },
+
+      {
+        title: "Javascript",
+        institution: "Openbootcamp",
+        year: 2022,
       },
     ],
 
@@ -76,7 +94,7 @@ export const professionals = [
     /* CERTIFICACIONES */
     certifications: [
       {
-        title: "Certificación en Data Science",
+        title: "Data Science",
         institution: "Universidad Nacional de Córdoba",
         year: 2020,
       },

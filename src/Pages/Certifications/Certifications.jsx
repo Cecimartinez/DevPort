@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CardCertifications } from "./Components/CardCertifications";
+import { useParams } from "react-router-dom";
+import { professionals } from "../../Mock/professionalsMock";
 
 export const Certifications = () => {
   const settings = {
@@ -22,15 +24,28 @@ export const Certifications = () => {
     ],
   };
 
+  const { id: professionalId } = useParams();
+
+  const professional = professionals.find(
+    (professional) => professional.professionalId === professionalId
+  );
+
   return (
     <div className="max-w-screen-lg mx-auto mt-12 px-4 sm:px-6 lg:px-8  h-full overflow-y-auto ">
       <Slider {...settings}>
-        <div><CardCertifications /></div>
-        <div><CardCertifications /></div>
-        <div><CardCertifications /></div>
-        <div><CardCertifications /></div>
-        <div><CardCertifications /></div>
-        <div><CardCertifications /></div>
+        {professional.certifications.map((certifications, index) => (
+
+          <div>
+          <CardCertifications
+            key={index}
+            title={certifications.title}
+            institution={certifications.institution}
+            year={certifications.year}
+            
+          /> </div>
+        ))}
+        
+        
       </Slider>
     </div>
   );
