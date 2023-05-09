@@ -41,6 +41,7 @@ export const Certifications = () => {
             title={certifications.title}
             institution={certifications.institution}
             year={certifications.year}
+            src={certifications.src}
             
           /> </div>
         ))}

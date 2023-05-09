@@ -1,17 +1,19 @@
 export const professionals = [
   {
-
-    /* ABOUT ME */ 
+    /* ABOUT ME */
     professionalId: "cecilia-martinez",
     name: "Cecilia Martinez",
     role: "Developer Fullstack",
     profession: "Ingeniería de software",
-    linkedin:"https://www.linkedin.com/in/cecilia-mart%C3%ADnez-%E2%9A%9B%EF%B8%8F-%F0%9F%9A%80-7420a524a",
-    about: "Soy una programadora fullstack apasionada por el mundo de la tecnología y la programación. Me encanta explorar nuevas herramientas y tecnologías, buscando mejorar mi habilidad para crear soluciones innovadoras y de alta calidad. Mi experiencia en desarrollo web y en múltiples lenguajes de programación me ha permitido abordar proyectos desafiantes y encontrar soluciones creativas para cumplir con los requerimientos de los clientes.",
+    linkedin:
+      "https://www.linkedin.com/in/cecilia-mart%C3%ADnez-%E2%9A%9B%EF%B8%8F-%F0%9F%9A%80-7420a524a",
+    about:
+      "Soy una programadora fullstack apasionada por el mundo de la tecnología y la programación. Me encanta explorar nuevas herramientas y tecnologías, buscando mejorar mi habilidad para crear soluciones innovadoras y de alta calidad. Mi experiencia en desarrollo web y en múltiples lenguajes de programación me ha permitido abordar proyectos desafiantes y encontrar soluciones creativas para cumplir con los requerimientos de los clientes.",
     email: "martinezcecilia2707@gmail.com",
     phone: "+54 9 11 38468128",
     city: "Ciudad Autonoma de Buenos Aires",
-    strengths: "Activa, aprendizaje ágil, trabajo en equipo, resolución de problemas",
+    strengths:
+      "Activa, aprendizaje ágil, trabajo en equipo, resolución de problemas",
     languages: [
       { language: "Español", level: "Nativo" },
       { language: "Inglés", level: "Intermedio" },
@@ -20,11 +22,99 @@ export const professionals = [
     /* CERTIFICACIONES */
     certifications: [
       {
-        title: "Certificación en Desarrollo Web",
-        institution: "Universidad de Buenos Aires",
-        year: 2021,
+        title: "Fullstack Developer Python",
+        institution: "Codo a codo",
+        year: 2022,
+        src: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
+      },
+
+      {
+        title: "Fullstack Developer React",
+        institution: "Codo a codo",
+        year: 2022,
+        src: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
+      },
+
+      {
+        title: "HTML & CSS",
+        institution: "OpenBootcamp",
+        year: 2022,
+        src: "../../img/certification/certificationCecilia/html_css.jpeg",
+      },
+
+      {
+        title: "Javascript",
+        institution: "OpenBootcamp",
+        year: 2023,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
+      },
+
+      {
+        title: "React",
+        institution: "OpenBootcamp",
+        year: 2023,
+        src: "../../img/certification/certificationCecilia/react.jpeg",
+      },
+
+      {
+        title: "Python",
+        institution: "OpenBootcamp",
+        year: 2023,
+        src: "../../img/certification/certificationCecilia/py.jpeg",
       },
     ],
+
+    projects:[
+      {
+        number: "Project #1",
+        title: "Calculator",
+        description: "Calculadora aplicando la lógica con javascript",
+        tags: [
+          { tag: "Javascript" },
+          { tag: "html & css" },]
+      },
+
+      {
+        number: "Project #2",
+        title: "Delicate Macarons",
+        description: "Sitio web gastronómico",
+        tags: [
+          { tag: "Javascript" },
+          { tag: "html & css" },]
+      },
+
+      {
+        number: "Project #3",
+        title: "Portafolio",
+        description: "Mi portafolio personal",
+        tags: [
+          { tag: "React" },
+          { tag: "html" },
+          { tag: "Tailwind" },
+        ]
+      },
+
+      {
+        number: "Project #4",
+        title: "DevPort",
+        description: "Plataforma cv, portafolios de profesionales IT",
+        tags: [
+          { tag: "React" },
+          { tag: "html" },
+          { tag: "Tailwind" },
+        ]
+      }
+
+
+
+
+
+    ],
+
+
+
+
+
 
     /* FORMACION */
     experience: [
@@ -34,33 +124,36 @@ export const professionals = [
         position: "Desarrolladora Frontend",
         workimage: <span class="material-symbols-outlined">work</span>,
         tags: [
-          { tag: "Metodologias Agiles"},
-          { tag: "Desarrollo de Software"},
+          { tag: "Javascript" },
+          { tag: "React" },
+          { tag: "HTML5" },
+          { tag: "CSS" },
+          { tag: "Tailwind" },
+          { tag: "Git & Github" },
+          { tag: "Node.js" },
         ],
       },
     ],
   },
 
-
   {
-
-    /* ABOUT ME */ 
+    /* ABOUT ME */
     professionalId: "fernando-longin",
     name: "Fernando José Longin",
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
     about: "Estudiante en Uade | Trainee at ExxonMobil",
-    linkedin:"https://www.linkedin.com/in/fernando-josé-longin",
+    linkedin: "https://www.linkedin.com/in/fernando-josé-longin",
     email: "ferlongin@hotmail.com",
     phone: "+54 9 11 5586-5874",
     city: "Buenos Aires",
-    strengths: "Metodologías Agiles, Analisis de Software y Desarrollo Ágil de Software.",
+    strengths:
+      "Metodologías Agiles, Analisis de Software y Desarrollo Ágil de Software.",
     languages: [
       { language: "Español", level: "Nativo" },
       { language: "Inglés", level: "Avanzado" },
       { language: "Portugues", level: "Intermedio" },
     ],
-
 
     /* CERTIFICACIONES */
     certifications: [
@@ -68,34 +161,39 @@ export const professionals = [
         title: "Agile Software Development",
         institution: "ExxonMobil",
         year: 2023,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
       {
         title: "Scrum: The Basics",
         institution: "ExxonMobil",
         year: 2023,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
       {
         title: "Agile Foundations",
         institution: "ExxonMobil",
         year: 2023,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
       {
         title: "Scientific Computing with Python",
         institution: "Free Code Camp",
         year: 2023,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
       {
         title: "Certificado de Lingua Portuguesa",
         institution: "Casa do Brasil",
         year: 2018,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
       {
         title: "First Certificate in English (FCE)",
         institution: "Cambridge",
         year: 2018,
+        src: "../../img/certification/certificationCecilia/js.jpeg",
       },
     ],
-
 
     /* FORMACION */
     experience: [
@@ -104,10 +202,7 @@ export const professionals = [
         company: "ExxonMobil",
         position: "Software Analyst Trainee",
         workimage: <span class="material-symbols-outlined">work</span>,
-        tags: [
-          { tag: "Agile"},
-          { tag: "Software Development"},
-        ],
+        tags: [{ tag: "Agile" }, { tag: "Software Development" }],
       },
 
       {
@@ -115,12 +210,8 @@ export const professionals = [
         company: "UADE",
         position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
-        tags: [
-          { tag: "Programación"},
-          { tag: "Negocios"},
-        ],
+        tags: [{ tag: "Programación" }, { tag: "Negocios" }],
       },
-
     ],
   },
 ];

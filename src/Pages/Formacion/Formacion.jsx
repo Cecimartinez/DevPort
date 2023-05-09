@@ -14,7 +14,7 @@ export const Formacion = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1">
         <div className="w-full">
           {professional && (
-            <ul className="mt-8">
+            <ul className="mt-8 flex justify-center items-center">
               {professional.experience.map((experience, index) => (
               <FormacionItem 
                   key={index}
