@@ -1,7 +1,7 @@
 export const TagSkills = ({nameSkill}) => {
   return (
     <>
-      <div className="   text-xs m-2 font-bold py-1.5 px-4 text-[#8D79FF] bg-[#D6CFFF] rounded-2xl">
+      <div className="px-4 py-1 text-base rounded-full text-indigo-500 border border-indigo-500 mr-2 mb-2">
         {nameSkill}
       </div>
     </>

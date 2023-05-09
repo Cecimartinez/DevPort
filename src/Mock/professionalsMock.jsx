@@ -104,17 +104,7 @@ export const professionals = [
           { tag: "Tailwind" },
         ]
       }
-
-
-
-
-
     ],
-
-
-
-
-
 
     /* FORMACION */
     experience: [
@@ -161,37 +151,37 @@ export const professionals = [
         title: "Agile Software Development",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpeg",
       },
       {
         title: "Scrum: The Basics",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpeg",
       },
       {
         title: "Agile Foundations",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpeg",
       },
       {
         title: "Scientific Computing with Python",
         institution: "Free Code Camp",
         year: 2023,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/freecode.jpeg",
       },
       {
         title: "Certificado de Lingua Portuguesa",
         institution: "Casa do Brasil",
         year: 2018,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/portugues.jpeg",
       },
       {
         title: "First Certificate in English (FCE)",
         institution: "Cambridge",
         year: 2018,
-        src: "../../img/certification/certificationCecilia/js.jpeg",
+        src: "../../img/certification/certificacionFer/ingles.png",
       },
     ],
 
@@ -213,5 +203,18 @@ export const professionals = [
         tags: [{ tag: "Programación" }, { tag: "Negocios" }],
       },
     ],
+
+    projects:[
+      {
+        number: "Project #1",
+        title: "DevPort",
+        description: "Plataforma cv, portafolios de profesionales IT",
+        tags: [
+          { tag: "React" },
+          { tag: "html" },
+          { tag: "Tailwind" },
+        ]
+      }
+    ]
   },
 ];

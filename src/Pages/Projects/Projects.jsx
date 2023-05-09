@@ -9,7 +9,7 @@ export const Projects = () => {
   );
 
   return (
-    <div className=" flex  h-full overflow-y-auto  justify-center container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-20 p-4 ">
+    <div className="flex h-full w-full overflow-y-auto justify-center container mx-auto px-4 py-8 max-w-[1040px] m-auto md:pl-10 p-4" style={{ marginTop: "-50px" }}>
       {professional.projects.map((projects, index) => (
         <CardProjects
           key={index}

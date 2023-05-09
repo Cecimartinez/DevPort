@@ -14,7 +14,7 @@ export const Formacion = () => {
       <div className="grid grid-cols-1 sm:grid-cols-1">
         <div className="w-full">
           {professional && (
-            <ul className="mt-8 flex justify-center items-center">
+            <ul className="mt-6 flex justify-center items-center flex-col gap-1">
               {professional.experience.map((experience, index) => (
               <FormacionItem 
                   key={index}
@@ -32,3 +32,4 @@ export const Formacion = () => {
     </div>
   );
 };
+
