@@ -20,27 +20,9 @@ export const professionals = [
     /* CERTIFICACIONES */
     certifications: [
       {
-        title: "Fullstack Python",
-        institution: "coco a codo",
-        year: 2022,
-      },
-
-      {
-        title: "Fullstack React",
-        institution: "coco a codo",
-        year: 2022,
-      },
-
-      {
-        title: "React",
-        institution: "Openbootcamp",
-        year: 2022,
-      },
-
-      {
-        title: "Javascript",
-        institution: "Openbootcamp",
-        year: 2022,
+        title: "Certificación en Desarrollo Web",
+        institution: "Universidad de Buenos Aires",
+        year: 2021,
       },
     ],
 
@@ -50,24 +32,12 @@ export const professionals = [
         period: "2022 - actualidad",
         company: "Frelance",
         position: "Desarrolladora Frontend",
-        imagen: "",
+        workimage: <span class="material-symbols-outlined">work</span>,
         tags: [
           { tag: "Metodologias Agiles"},
           { tag: "Desarrollo de Software"},
         ],
       },
-    ],
-
-    /* SKILLS */
-    skills: [
-      "JavaScript",
-      "React",
-      "Node.js",
-      "HTML/CSS",
-      "SQL",
-      "Python",
-      "Java",
-      "Tailwind"
     ],
   },
 
@@ -80,7 +50,7 @@ export const professionals = [
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
     about: "Estudiante en Uade | Trainee at ExxonMobil",
-    linkedin:"Fernando José Longin",
+    linkedin:"https://www.linkedin.com/in/fernando-josé-longin",
     email: "ferlongin@hotmail.com",
     phone: "+54 9 11 5586-5874",
     city: "Buenos Aires",
@@ -88,15 +58,41 @@ export const professionals = [
     languages: [
       { language: "Español", level: "Nativo" },
       { language: "Inglés", level: "Avanzado" },
+      { language: "Portugues", level: "Intermedio" },
     ],
 
 
     /* CERTIFICACIONES */
     certifications: [
       {
-        title: "Data Science",
-        institution: "Universidad Nacional de Córdoba",
-        year: 2020,
+        title: "Agile Software Development",
+        institution: "ExxonMobil",
+        year: 2023,
+      },
+      {
+        title: "Scrum: The Basics",
+        institution: "ExxonMobil",
+        year: 2023,
+      },
+      {
+        title: "Agile Foundations",
+        institution: "ExxonMobil",
+        year: 2023,
+      },
+      {
+        title: "Scientific Computing with Python",
+        institution: "Free Code Camp",
+        year: 2023,
+      },
+      {
+        title: "Certificado de Lingua Portuguesa",
+        institution: "Casa do Brasil",
+        year: 2018,
+      },
+      {
+        title: "First Certificate in English (FCE)",
+        institution: "Cambridge",
+        year: 2018,
       },
     ],
 
@@ -104,39 +100,27 @@ export const professionals = [
     /* FORMACION */
     experience: [
       {
-        period: "2022 - actualidad",
-        company: "exxonMobile",
-        position: "Sogwehrfwehf",
-        workimage: "",
+        period: "2023 - Actualidad",
+        company: "ExxonMobil",
+        position: "Software Analyst Trainee",
+        workimage: <span class="material-symbols-outlined">work</span>,
         tags: [
-          { tag: "Metodologias Agiles"},
-          { tag: "Desarrollo de Software"},
+          { tag: "Agile"},
+          { tag: "Software Development"},
         ],
       },
 
       {
-        period: "2033 - actualidad",
-        company: "exedjkedkjedjedkieMobile",
-        position: "Sogwehrfwehf",
-        workimage: "",
+        period: "2021 - Actualidad",
+        company: "UADE",
+        position: "Lic. en Sistemas",
+        workimage: <span class="material-symbols-outlined">school</span>,
         tags: [
-          { tag: "Metodologias Agiles"},
-          { tag: "Desarrollo de Software"},
+          { tag: "Programación"},
+          { tag: "Negocios"},
         ],
       },
 
-
-
-    ],
-    
-
-    /* SKILLS */
-    skills: [
-      "Python",
-      "R",
-      "SQL",
-      "Tableau",
-      "Machine Learning",
     ],
   },
 ];

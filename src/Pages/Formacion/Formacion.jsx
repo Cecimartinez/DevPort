@@ -10,13 +10,12 @@ export const Formacion = () => {
   );
 
   return (
-    <div className="container mx-auto  px-4 max-w-4xl h-screen overflow-y-auto">
-      <div className="grid grid-cols-1 sm:grid-cols-1 gap-20">
-        <div className="w-full mt-10">
+    <div className="container mx-auto px-4 max-w-4xl h-screen overflow-y-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-1">
+        <div className="w-full">
           {professional && (
             <ul className="mt-8">
               {professional.experience.map((experience, index) => (
-
               <FormacionItem 
                   key={index}
                   period={experience.period}
@@ -25,9 +24,6 @@ export const Formacion = () => {
                   workimage={experience.workimage}
                   tags={experience.tags}
                 />
-
-
-                
               ))}
             </ul>
           )}

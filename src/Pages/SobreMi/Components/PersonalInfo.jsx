@@ -17,7 +17,7 @@ const PersonalInfo = ({ name, email,linkedin,phone,
       <h2 className="text-lg font-semibold mb-2 sm:mb-0 text-[#53f]">{name} </h2>
       <p className="text-sm font-medium mb-2">{location}</p>
       <div className="mt-4">
-        <h3 className="text-m font-medium text-[#53f]">Contact Information</h3>
+        <h3 className="text-lg font-medium text-[#53f]">Contact Information</h3>
         <div className="mt-2">
           <p className="text-sm">
             <span className="font-medium">Email:</span> {email}
@@ -34,17 +34,17 @@ const PersonalInfo = ({ name, email,linkedin,phone,
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="text-sm font-medium text-[#53f] ">Professional Profile</h3>
+        <h3 className="text-lg font-medium text-[#53f] ">Professional Profile</h3>
         <p className="text-sm ">{professionalProfile}</p>
       </div>
       <div className="mt-4">
-        <h3 className="text-m font-medium text-[#53f] ">Strengths</h3>
+        <h3 className="text-lg font-medium text-[#53f] ">Strengths</h3>
         <ul className="list-disc list-inside text-sm ">
           <li>{strengths}</li>
         </ul>
       </div>
       <div className="mt-2">
-        <h3 className="text-sm font-medium text-[#53f]">Languages</h3>
+        <h3 className="text-lg font-medium text-[#53f]">Languages</h3>
         <ul className="list-disc list-inside text-sm ">
           {languages.map((language) => (
             <li key={language.language}>{language.language}</li>

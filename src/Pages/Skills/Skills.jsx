@@ -2,8 +2,18 @@ import Experience from "./Components/Experience";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import html from "../../assets/html.png";
+import css from "../../assets/css.png";
+import react from "../../assets/react.png";
+import tailwind from "../../assets/tailwind.png";
+import java from "../../assets/java.png";
+import javascript from "../../assets/javascript.png";
+import Python from "../../assets/Python.png";
+import github from "../../assets/github.png";
 
 export const Skills = () => {
+  const images = [html, css, react, tailwind, java, javascript, Python, github];
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,19 +28,20 @@ export const Skills = () => {
         settings: {
           slidesToShow: 2,
           dots: false,
-          autoplaySpeed: 100,
+          autoplaySpeed: 300,
         },
       },
     ],
   };
   
   return (
-    <div style={{ width: "50%", margin: "0 auto", marginTop: "100px" }} className=" h-full overflow-y-auto ">
+    <div style={{ width: "50%", margin: "0 auto", marginTop: "100px" }} className=" h-full overflow-y-auto">
       <Slider {...settings}>
-      <div><Experience /></div>
-      <div><Experience /></div>
-      <div><Experience /></div>
-      <div><Experience /></div>
+        {images.map((image, index) => (
+          <div key={index}>
+            <Experience imagen={image} />
+          </div>
+        ))}
       </Slider>
     </div>
   );
