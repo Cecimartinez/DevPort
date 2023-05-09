@@ -5,8 +5,9 @@ import { professionals } from "../../Mock/professionalsMock";
 import { useParams } from "react-router-dom";
 
 export const SobreMi = () => {
+
   const { id: professionalId } = useParams();
-  console.log(professionalId);
+  
   const professionalInfo = professionals.find(
     (professional) => professional.professionalId === professionalId
   );

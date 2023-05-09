@@ -87,14 +87,28 @@ export const professionals = [
     experience: [
       {
         period: "2022 - actualidad",
-        company: "Frelance",
-        position: "Desarrolladora Frontend",
+        company: "exxonMobile",
+        position: "Sogwehrfwehf",
         workimage: "",
         tags: [
           { tag: "Metodologias Agiles"},
           { tag: "Desarrollo de Software"},
         ],
       },
+
+      {
+        period: "2033 - actualidad",
+        company: "exedjkedkjedjedkieMobile",
+        position: "Sogwehrfwehf",
+        workimage: "",
+        tags: [
+          { tag: "Metodologias Agiles"},
+          { tag: "Desarrollo de Software"},
+        ],
+      },
+
+
+
     ],
     
 

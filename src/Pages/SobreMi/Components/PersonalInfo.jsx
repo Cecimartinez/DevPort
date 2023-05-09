@@ -1,10 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-const PersonalInfo = ({
-  name,
-  email,
-  linkedin,
-  phone,
+const PersonalInfo = ({ name, email,linkedin,phone,
   location,
   imageSrc,
   professionalProfile,
