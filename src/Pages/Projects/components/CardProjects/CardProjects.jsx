@@ -6,10 +6,12 @@ export const CardProjects = ({ title, description, tags, src }) => {
     <div className="bg-transparent">
       <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
         <a href="#" className="block w-full h-full">
-          <ImageComponent
-            src={src}
-            className="object-contain w-full h-40 sm:h-full"
-          />
+          <div className="w-full h-40 sm:h-64 relative">
+            <ImageComponent
+              src={src}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+            />
+          </div>
 
           <div className="p-4 bg-white">
             <h3 className="mb-2 text-xl font-bold text-[#9C9C9C]">

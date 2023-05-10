@@ -3,7 +3,7 @@ import { ProfesionalCard } from "./components/ProfesionalCard";
 
 export const Profesionales = () => {
   return (
-    <div id="profesionales" className="flex flex-col px-4 sm:px-10 md:px-20 py-10 items-center h-screen overflow-x-hidden">
+    <div id="profesionales" className="flex flex-col px-4 sm:px-10 mb-20 pb-20 md:px-20 py-10 items-center h-screen overflow-x-hidden">
       <Subtitulo value="Professional" className="font-extrabold text-3xl sm:text-4xl py-4 mx-auto" />
       <p className="py-5 text-center">Explore the portfolios of our professionals.</p>
       <div className="flex flex-col sm:flex-row w-full justify-center ">
