@@ -52,16 +52,57 @@ body {
 
 }
 
-#title-login{
+#title-login, .title-professionals{
   font-family: 'Secular One', sans-serif;
 }
 
-#title-login{
+.title-professionals {
+  display: inline-block;
+  font-size: 3rem;
+}
+
+.title-professionals  {
+  display: inline-block;
+  animation: move 2s ease-in-out infinite alternate;
+  color:#734dff
+}
+
+.title-professionals:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.title-professionals:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.title-professionals:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.title-professionals:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.title-professionals:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }};
+
+
+
+#title-login {
   width: 0;
   overflow: hidden;
   white-space: nowrap;  
   margin: 0 auto;
-  border-right: 0.15em solid #18bdec;
+  border-right: 0.15em solid #c3a2ff;
   animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
 }
 @keyframes typing {
@@ -77,3 +118,5 @@ body {
     border-color: transparent;
   }
 }
+
+

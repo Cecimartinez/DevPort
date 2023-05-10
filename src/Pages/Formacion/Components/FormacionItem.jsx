@@ -11,10 +11,10 @@ const FormacionItem = ({ period, company, position, workimage, tags}) => {
       </div>
       <div className="flex-1 md:ml-4">
         <div className="flex flex-col justify-between md:flex-row">
-          <div className="text-lg font-medium px-6 pt-2 bg-[#53f] text-white rounded-md mb-2 md:mb-0 md:mr-2 md:px-4">{company}</div>
+          <div className="text-lg px-6 w-auto text-center font-semibold mt-4 py-1 bg-[#53f] text-white rounded-md mb-2 md:mb-0 md:mr-2 md:px-4">{company}</div>
           <div className="text-lg mt-4 text-black-500">{period}</div>
         </div>
-        <div className="text-lg font-semibold text-[#6e6e6e] mt-2">{position}</div>
+        <div className="text-lg font-bold text-[#53f] mt-2">{position}</div>
         <div className="flex flex-wrap justify-end mt-4">
           {tags.map((tag) => (
             <span className="px-4 py-1 text-base rounded-full text-indigo-500 border border-indigo-500 mr-2 mb-2" key={tag.tag}>{tag.tag}</span>

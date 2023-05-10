@@ -5,7 +5,7 @@ export const professionals = [
     name: "Cecilia Martinez",
     role: "Developer Fullstack",
     profession: "Ingeniería de software",
-    srcImg: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
+    srcImg: "../../img/ceci.jpeg",
 
     linkedin:
       "https://www.linkedin.com/in/cecilia-mart%C3%ADnez-%E2%9A%9B%EF%B8%8F-%F0%9F%9A%80-7420a524a",
@@ -71,7 +71,7 @@ export const professionals = [
         number: "Project #1",
         title: "Calculator",
         description: "Calculadora aplicando la lógica con javascript",
-        src: "../../img/cecicash.png",
+        src: "../../img/calculator.jpeg",
         tags: [{ tag: "Javascript" }, { tag: "html & css" }],
       },
 
@@ -79,7 +79,7 @@ export const professionals = [
         number: "Project #2",
         title: "Delicate Macarons",
         description: "Sitio web gastronómico",
-        src: "../../img/cecicash.png",
+        src: "../../img/macarons.jpeg",
         tags: [{ tag: "Javascript" }, { tag: "html & css" }],
       },
 
@@ -87,7 +87,7 @@ export const professionals = [
         number: "Project #3",
         title: "Portafolio",
         description: "Mi portafolio personal",
-        src: "../../img/cecicash.png",
+        src: "../../img/ceciPortafolio.jpeg",
         tags: [{ tag: "React" }, { tag: "html" }, { tag: "Tailwind" }],
       },
 
@@ -95,7 +95,7 @@ export const professionals = [
         number: "Project #4",
         title: "DevPort",
         description: "Plataforma cv, portafolios de profesionales IT",
-        src: "../../img/cecicash.png",
+        src: "../../img/devPort.jpeg",
         tags: [{ tag: "React" }, { tag: "html" }, { tag: "Tailwind" }],
       },
     ],
@@ -117,6 +117,14 @@ export const professionals = [
           { tag: "Node.js" },
         ],
       },
+
+      {
+        period: "2021 - Actualidad",
+        company: "UADE",
+        position: "Tec. Desarrollo de Software",
+        workimage: <span class="material-symbols-outlined">school</span>,
+        tags: [{ tag: "Programación" }],
+      },
     ],
   },
 
@@ -126,7 +134,7 @@ export const professionals = [
     name: "Fernando José Longin",
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
-    srcImg: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
+    srcImg: "../../img/fer.jpg",
     about: "Estudiante en Uade | Trainee at ExxonMobil",
     linkedin: "https://www.linkedin.com/in/fernando-josé-longin",
     email: "ferlongin@hotmail.com",

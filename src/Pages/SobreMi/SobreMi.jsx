@@ -1,5 +1,4 @@
 import PersonalInfo from "./Components/PersonalInfo";
-import Foto_CV from "../../assets/Foto_CV.jpg";
 import { Subtitulo } from "../../componentes/Subtitulo/Subtitulo";
 import { professionals } from "../../Mock/professionalsMock";
 import { useParams } from "react-router-dom";
@@ -25,7 +24,7 @@ export const SobreMi = () => {
           linkedin={professionalInfo?.linkedin}
           phone={professionalInfo?.phone}
           location={professionalInfo?.city}
-          imageSrc={Foto_CV}
+          imageSrc={professionalInfo?.srcImg}
           professionalProfile={professionalInfo?.about}
           strengths={professionalInfo?.strengths}
           languages={professionalInfo?.languages}

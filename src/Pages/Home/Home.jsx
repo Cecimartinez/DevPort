@@ -3,7 +3,7 @@ import "animate.css";
 
 export const Home = () => {
   return (
-    <div id="home" className="h-screen flex items-center ">
+    <div id="home" className={"h-screen flex items-center "}>
       <div className="text-center mx-auto ">
         <p className="mb-10 animate-waving-hand text-8xl transition-all duration-500 animate-bounce ">
           👋🏻

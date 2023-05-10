@@ -13,8 +13,8 @@ export const CardProjects = ({ title, description, tags, src }) => {
             />
           </div>
 
-          <div className="p-4 bg-white">
-            <h3 className="mb-2 text-xl font-bold text-[#9C9C9C]">
+          <div className="p-4 bg-[#fff]">
+            <h3 className="mb-2 text-xl font-bold text-[#53f]">
               {title}
             </h3>
 
