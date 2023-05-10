@@ -1,19 +1,18 @@
 import { ImageComponent } from "../../../../componentes/ImageComponent/ImageComponent";
 import { TagSkills } from "../TagSkills/TagSkills";
 
-export const CardProjects = ({ number, title, description, tags, src }) => {
+export const CardProjects = ({ title, description, tags, src }) => {
   return (
-    <div className="projects bg-transparent flex justify-center px-3 py-2 flex-row content-center items-center">
-      <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer w-full sm:w-60">
+    <div className="bg-transparent">
+      <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
         <a href="#" className="block w-full h-full">
           <ImageComponent
-            src={"../../img/cecicash.png"}
-            className="object-contain w-full max-h-40 sm:max-h-full"
+            src={src}
+            className="object-contain w-full h-40 sm:h-full"
           />
 
-          <div className="w-full h-full p-4 bg-white white:bg-black-800">
-            <p className="text-black-500 text-md font-bold">{number}</p>
-            <h3 className="mb-2 text-xl text-black font-bold text-[#9C9C9C]">
+          <div className="p-4 bg-white">
+            <h3 className="mb-2 text-xl font-bold text-[#9C9C9C]">
               {title}
             </h3>
 

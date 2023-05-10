@@ -69,6 +69,7 @@ export const professionals = [
         number: "Project #1",
         title: "Calculator",
         description: "Calculadora aplicando la lógica con javascript",
+        src: "../../img/cecicash.png",
         tags: [
           { tag: "Javascript" },
           { tag: "html & css" },]
@@ -78,6 +79,7 @@ export const professionals = [
         number: "Project #2",
         title: "Delicate Macarons",
         description: "Sitio web gastronómico",
+        src: "../../img/cecicash.png",
         tags: [
           { tag: "Javascript" },
           { tag: "html & css" },]
@@ -87,6 +89,7 @@ export const professionals = [
         number: "Project #3",
         title: "Portafolio",
         description: "Mi portafolio personal",
+        src: "../../img/cecicash.png",
         tags: [
           { tag: "React" },
           { tag: "html" },
@@ -98,6 +101,7 @@ export const professionals = [
         number: "Project #4",
         title: "DevPort",
         description: "Plataforma cv, portafolios de profesionales IT",
+        src: "../../img/cecicash.png",
         tags: [
           { tag: "React" },
           { tag: "html" },
