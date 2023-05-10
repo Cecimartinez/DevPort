@@ -33,16 +33,19 @@ export const Skills = () => {
       },
     ],
   };
-  
+
   return (
-    <div style={{ width: "50%", margin: "0 auto", marginTop: "100px" }} className=" h-full overflow-y-auto">
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <Experience imagen={image} />
-          </div>
-        ))}
-      </Slider>
-    </div>
+      <div
+        style={{ width: "50%", margin: "0 auto", marginTop: "100px" }}
+        className=" h-full  overflow-y-auto"
+      >
+        <Slider {...settings}>
+          {images.map((image, index) => (
+            <div key={index} >
+              <Experience imagen={image} />
+            </div>
+          ))}
+        </Slider>
+      </div>
   );
 };

@@ -5,6 +5,8 @@ export const professionals = [
     name: "Cecilia Martinez",
     role: "Developer Fullstack",
     profession: "Ingeniería de software",
+    srcImg: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
+
     linkedin:
       "https://www.linkedin.com/in/cecilia-mart%C3%ADnez-%E2%9A%9B%EF%B8%8F-%F0%9F%9A%80-7420a524a",
     about:
@@ -64,15 +66,13 @@ export const professionals = [
       },
     ],
 
-    projects:[
+    projects: [
       {
         number: "Project #1",
         title: "Calculator",
         description: "Calculadora aplicando la lógica con javascript",
         src: "../../img/cecicash.png",
-        tags: [
-          { tag: "Javascript" },
-          { tag: "html & css" },]
+        tags: [{ tag: "Javascript" }, { tag: "html & css" }],
       },
 
       {
@@ -80,9 +80,7 @@ export const professionals = [
         title: "Delicate Macarons",
         description: "Sitio web gastronómico",
         src: "../../img/cecicash.png",
-        tags: [
-          { tag: "Javascript" },
-          { tag: "html & css" },]
+        tags: [{ tag: "Javascript" }, { tag: "html & css" }],
       },
 
       {
@@ -90,11 +88,7 @@ export const professionals = [
         title: "Portafolio",
         description: "Mi portafolio personal",
         src: "../../img/cecicash.png",
-        tags: [
-          { tag: "React" },
-          { tag: "html" },
-          { tag: "Tailwind" },
-        ]
+        tags: [{ tag: "React" }, { tag: "html" }, { tag: "Tailwind" }],
       },
 
       {
@@ -102,12 +96,8 @@ export const professionals = [
         title: "DevPort",
         description: "Plataforma cv, portafolios de profesionales IT",
         src: "../../img/cecicash.png",
-        tags: [
-          { tag: "React" },
-          { tag: "html" },
-          { tag: "Tailwind" },
-        ]
-      }
+        tags: [{ tag: "React" }, { tag: "html" }, { tag: "Tailwind" }],
+      },
     ],
 
     /* FORMACION */
@@ -136,6 +126,7 @@ export const professionals = [
     name: "Fernando José Longin",
     role: "Software Analyst Trainee",
     profession: "Licenciatura en gestión tecnologías de la información",
+    srcImg: "../../img/certification/certificationCecilia/fullstackPY.jpeg",
     about: "Estudiante en Uade | Trainee at ExxonMobil",
     linkedin: "https://www.linkedin.com/in/fernando-josé-longin",
     email: "ferlongin@hotmail.com",
@@ -208,17 +199,35 @@ export const professionals = [
       },
     ],
 
-    projects:[
+    projects: [
       {
         number: "Project #1",
         title: "DevPort",
         description: "Plataforma cv, portafolios de profesionales IT",
-        tags: [
-          { tag: "React" },
-          { tag: "html" },
-          { tag: "Tailwind" },
-        ]
-      }
-    ]
+        src: "../../img/devPort.jpeg",
+        tags: [{ tag: "React" }, { tag: "html" }, { tag: "Tailwind" }],
+      },
+
+      {
+        number: "Project #2",
+        title: "Frelatto",
+        description: "Sitio Web sobre una heladería Italiana de familia",
+        src: "../../img/frelatto.jpeg",
+        tags: [{ tag: "Javascript" }, { tag: "html" }, { tag: "CSS" }],
+      },
+
+      {number: "Project #3",
+      title: "Submarine Attack",
+      description: "Juego desarrollado en Java utilizando conceptos de POO.",
+      src: "../../img/submarineAttack.jpeg",
+      tags: [{ tag: "Java" }, { tag: "POO" }, {tag: "Swing"}]},
+
+      {number: "Project #4",
+      title: "Cuatro en Linea",
+      description: "Juego desarrollado en Python para la materia Programación I.",
+      src: "../../img/cuatroEnLinea.jpeg",
+      tags: [{ tag: "Python" }]}
+
+    ],
   },
 ];

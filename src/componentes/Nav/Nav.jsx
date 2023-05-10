@@ -14,9 +14,9 @@ export const Nav = () => {
   };
 
   return (
-    <div className="text-sm font-medium justify-center text-center text-gray-500 border-b border-gray-200 ">
+    <div className="text-sm font-medium justify-center items-center h-full mt-0  text-center text-gray-500 border-b border-gray-200 ">
       <button
-        className="md:hidden block text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+        className="md:hidden block text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none mx-auto"
         onClick={toggleMenu}
       >
         <svg

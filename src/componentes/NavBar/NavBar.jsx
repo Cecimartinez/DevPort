@@ -11,12 +11,13 @@ export const NavBar = () => {
       <nav className="bg-[#f5f4ff]  shadow relative px-5 py-3">
         <div className="container-nav mx-auto flex px-8 xl:px-0">
           <div className="flex flex-grow items-center">
-            <ImageComponent
-              className="w-11 h-11"
-              src="../../img/icono.png"
-              alt=""
-              onClick={<Link to="/home" />}
-            />
+            <Link to="/home">
+              <ImageComponent
+                className="w-11 h-11"
+                src="../../img/icono.png"
+                alt=""
+              />
+            </Link>
           </div>
 
           <div
@@ -39,10 +40,6 @@ export const NavBar = () => {
               <span className="material-symbols-outlined ">Login</span>
             </Link>
           </div>
-
-
-
-
         </div>
       </nav>
     </>
