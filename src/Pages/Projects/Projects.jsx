@@ -10,8 +10,8 @@ export const Projects = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-[1040px] m-auto mb-20 md:pl-10 p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+    <div className="container mx-auto px-4  max-w-[1040px] m-auto mb-20 md:pl-10 p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 ">
         {professional.projects.map((project, index) => (
           <CardProjects
             key={index}

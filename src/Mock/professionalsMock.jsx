@@ -154,19 +154,19 @@ export const professionals = [
         title: "Agile Software Development",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificacionFer/exxon.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpg",
       },
       {
         title: "Scrum: The Basics",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificacionFer/exxon.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpg",
       },
       {
         title: "Agile Foundations",
         institution: "ExxonMobil",
         year: 2023,
-        src: "../../img/certification/certificacionFer/exxon.jpeg",
+        src: "../../img/certification/certificacionFer/exxon.jpg",
       },
       {
         title: "Scientific Computing with Python",

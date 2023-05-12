@@ -37,7 +37,7 @@ export const Skills = () => {
   return (
       <div
         style={{ width: "50%", margin: "0 auto", marginTop: "100px" }}
-        className=" h-full  overflow-y-auto"
+        className=" h-full  overflow-y-auto  py-32"
       >
         <Slider {...settings}>
           {images.map((image, index) => (

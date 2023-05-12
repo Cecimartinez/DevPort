@@ -35,8 +35,8 @@ export const Certifications = () => {
       <Slider {...settings}>
         {professional.certifications.map((certifications, index) => (
 
-          <div>
-          <CardCertifications
+          <div className="py-32">
+          <CardCertifications 
             key={index}
             title={certifications.title}
             institution={certifications.institution}

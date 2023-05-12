@@ -5,7 +5,7 @@ const FormacionItem = ({ period, company, position, workimage, tags}) => {
   return (
     <div className="w-full my-10 py-3 px-6 rounded-md shadow-md md:flex h-full  ">
       <div className="md:w-1/6 md:pr-4 md:flex-shrink-0">
-        <div className="bg-[#2d2e30] text-[#53f] rounded-full w-20 h-20 flex items-center justify-center mx-auto">
+        <div className="bg-[#c7bcff] text-[#53f] rounded-full w-20 h-20 flex items-center justify-center mx-auto">
           {workimage}
         </div>
       </div>
@@ -17,7 +17,7 @@ const FormacionItem = ({ period, company, position, workimage, tags}) => {
         <div className="text-lg  text-[#ffffff] mt-2">{position}</div>
         <div className="flex flex-wrap justify-end mt-4">
           {tags.map((tag) => (
-            <span className="px-4 py-1 text-base rounded-full text-[#53f] border border-[#53f] bg-[#9c88ff] mr-2 mb-2" key={tag.tag}>{tag.tag}</span>
+            <span className="px-4 py-1 text-base rounded-full text-white font-semibold border border-[#53f] bg-[#53f] mr-2 mb-2" key={tag.tag}>{tag.tag}</span>
           ))}
         </div>
       </div>

@@ -3,7 +3,7 @@ import { TagSkills } from "../TagSkills/TagSkills";
 
 export const CardProjects = ({ title, description, tags, src }) => {
   return (
-    <div className="bg-[000]">
+    <div className="bg-[000] ">
       <div className="m-auto overflow-hidden rounded-lg bg-[000] shadow-lg cursor-pointer">
         <a href="#" className="block w-full h-full">
           <div className="w-full h-40 sm:h-64 relative">
@@ -14,12 +14,12 @@ export const CardProjects = ({ title, description, tags, src }) => {
           </div>
 
           <div className="p-4 bg-[#212224]">
-            <h3 className="mb-2 text-xl font-bold text-[#53f]">
+            <h3 className="mb-2 text-xl font-extrabold text-[#7f65ff]">
               {title}
             </h3>
 
             <section className="my-2 py-2">
-              <p className="font-light text-black-400 dark:text-black-300 text-sm text-white">
+              <p className="font-light text-black-400 dark:text-black-300 text-base text-white">
                 {description}
               </p>
             </section>
