@@ -3,8 +3,8 @@ import { TagSkills } from "../TagSkills/TagSkills";
 
 export const CardProjects = ({ title, description, tags, src }) => {
   return (
-    <div className="bg-transparent">
-      <div className="m-auto overflow-hidden rounded-lg shadow-lg cursor-pointer">
+    <div className="bg-[000]">
+      <div className="m-auto overflow-hidden rounded-lg bg-[000] shadow-lg cursor-pointer">
         <a href="#" className="block w-full h-full">
           <div className="w-full h-40 sm:h-64 relative">
             <ImageComponent
