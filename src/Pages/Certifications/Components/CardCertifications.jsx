@@ -16,7 +16,7 @@ export const CardCertifications = ({title, institution, year, src}) => {
       <main className="flex flex-col justify-center p-4 sm:p-0">
         <header className="py-2 px-2 sm:py-0">
           <Title
-            className="text-sm font-semibold text-center sm:text-left"
+            className="text-sm font-semibold text-center sm:text-left text-white"
             value={title}
           />
           <Subtitulo

@@ -50,7 +50,7 @@ export const Nav = () => {
             id={item.id}
             label={item.label}
             to={item.propName}
-            className="block font-medium px-4 py-2 hover:bg-gray-100"
+            className="block font-medium px-4 py-2 text-white hover:bg-[#53f] hover:text-white"
             onClick={handleItemClick} // Nueva prop para cerrar el menú al hacer click
           />
         ))}

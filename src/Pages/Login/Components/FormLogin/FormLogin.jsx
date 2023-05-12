@@ -20,17 +20,17 @@ export const FormLogin = () => {
 
   return (
     <form
-      className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-[#f3f4ff]"
+      className="mb-0 mt-6 space-y-4 rounded-lg p-4 shadow-lg sm:p-6 lg:p-8 bg-[#212224]"
       onSubmit={handleSubmit}
     >
-      <p className="text-center text-lg font-medium">Sign in to your account</p>
+      <p className="text-center text-lg font-medium text-white">Sign in to your account</p>
 
       <label className="sr-only">Email</label>
 
       <div className="relative">
         <input
           type="email"
-          className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+          className="w-full rounded-lg text-white border-gray-200 p-4 pe-12 bg-[#212224] text-sm shadow-sm"
           placeholder="Enter email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -43,7 +43,7 @@ export const FormLogin = () => {
       <div className="relative">
         <input
           type="password"
-          className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm"
+          className="w-full rounded-lg border-gray- text-white bg-[#212224] p-4 pe-12 text-sm shadow-sm"
           placeholder="Enter password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

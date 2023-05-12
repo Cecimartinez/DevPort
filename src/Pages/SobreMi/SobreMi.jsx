@@ -14,7 +14,7 @@ export const SobreMi = () => {
   return (
     <div className="container mx-auto px-4  max-w-[1040px]  h-full overflow-y-auto ">
       <Subtitulo
-        className="text-base text-gray-600 text-center font-medium"
+        className="text-base text-center font-medium"
         value=""
       />
       {professionalInfo && (

@@ -8,7 +8,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <nav className="bg-[#f5f4ff]  shadow relative px-5 py-3">
+      <nav className="bg-[#212224]  shadow relative px-5 py-3">
         <div className="container-nav mx-auto flex px-8 xl:px-0">
           <div className="flex flex-grow items-center">
             <Link to="/home">
@@ -25,12 +25,12 @@ export const NavBar = () => {
               isNavOpen ? "" : "hidden"
             }`}
           >
-            <div className="flex flex-col  lg:flex-row  mb-8 lg:mb-0 justify-center items-center text-black font-medium">
+            <div className="flex flex-col  lg:flex-row  mb-8 lg:mb-0 justify-center items-center text-white font-medium">
               <ListItems />
             </div>
           </div>
 
-          <div className="flex justify-end  text-center items-center pt-2">
+          <div className="flex justify-end  text-center items-center text-white  pt-2">
             <Link
               to="/login"
               value="Login"

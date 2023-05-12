@@ -6,7 +6,7 @@ export const PageItems = ({ className, to, label }) => {
   return (
     <>
       <li className=" lg:inline-flex">
-        <Link to={`${to}`} className={className}>
+        <Link to={`${to}`} className={className} >
           {label}
         </Link>
       </li>

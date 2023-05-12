@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #f5f4ff;
+  background: #212224;
 }
 
 #title-home{
@@ -56,14 +56,10 @@ body {
   font-family: 'Secular One', sans-serif;
 }
 
-.title-professionals {
-  display: inline-block;
-  font-size: 3rem;
-}
+
 
 .title-professionals  {
-  display: inline-block;
-  animation: move 2s ease-in-out infinite alternate;
+ 
   color:#734dff
 }
 
@@ -101,6 +97,29 @@ body {
   width: 0;
   overflow: hidden;
   white-space: nowrap;  
+  margin: 0 auto;
+  border-right: 0.15em solid #c3a2ff;
+  animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#title-login  {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2rem;
   margin: 0 auto;
   border-right: 0.15em solid #c3a2ff;
   animation: typing 4s steps(38) 1s 1 normal both, blink 1s steps(1) infinite;
