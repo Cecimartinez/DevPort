@@ -5,7 +5,8 @@ export const ROUTE_PATHS = {
   PROFESSIONALPROLFILE: "professionalprofile",
 
   SOBREMI: "aboutme",
-  FORMACION: "Proficiency",
+  FORMACION: "formacion",
+  EDUCACION:"education",
   CERTIFICATIONS: "  certifications",
   SKILLS: "skills",
   PROJECTS: "projects",

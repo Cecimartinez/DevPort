@@ -11,17 +11,20 @@ import { ProfessionalProfile } from "../Pages/ProfessionalProfile/ProfessionalPr
 import { Certifications } from "../Pages/Certifications/Certifications";
 import { ContactTable } from "../Pages/ContactTable/ContactTable";
 import { Projects } from "../Pages/Projects/Projects";
+import { Education } from "../Pages/Education/Education";
 
 export const AppRouter = () => {
   return (
     <>
       <Routes>
+        
         <Route index element={<Home />} />
         <Route path={ROUTE_PATHS.LOGIN} element={<Login />} />
         <Route path={ROUTE_PATHS.PROFESIONALES} element={<Profesionales />} />
         
         <Route path={`${ROUTE_PATHS.PROFESSIONALPROLFILE}/:id`} element={<ProfessionalProfile/>} >
           <Route path={`${ROUTE_PATHS.SOBREMI}`} element={<SobreMi />} />
+          <Route path={`${ROUTE_PATHS.EDUCACION}`} element={<Education/>} />
           <Route path={`${ROUTE_PATHS.FORMACION}`} element={<Formacion />} />
           <Route path={`${ROUTE_PATHS.CERTIFICATIONS}`} element={<Certifications/>}/>
           <Route path={`${ROUTE_PATHS.SKILLS}`} element={<Skills />} />

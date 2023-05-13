@@ -103,29 +103,25 @@ export const professionals = [
     /* FORMACION */
     experience: [
       {
-        period: "2022 - actualidad",
-        company: "Frelance",
-        position: "Desarrolladora Frontend",
+        period: "2023 - Actualidad",
+        company: "Freelance ",
+        position: "Developer Fullstack ",
         workimage: <span class="material-symbols-outlined">work</span>,
-        tags: [
-          { tag: "Javascript" },
-          { tag: "React" },
-          { tag: "HTML5" },
-          { tag: "CSS" },
-          { tag: "Tailwind" },
-          { tag: "Git & Github" },
-          { tag: "Node.js" },
-        ],
+        tags: [{ tag: "React" }, { tag: "Javascript" }, { tag: "node.js" }, { tag: "Tailwind- css" }, { tag: "HTML" }],
       },
 
+    ],
+
+    education:[
       {
         period: "2021 - Actualidad",
         company: "UADE",
-        position: "Tec. Desarrollo de Software",
+        position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
-        tags: [{ tag: "Programación" }],
-      },
+        tags: [{ tag: "Programación" }, { tag: "Negocios" }],
+      }
     ],
+
   },
 
   {
@@ -198,13 +194,16 @@ export const professionals = [
         tags: [{ tag: "Agile" }, { tag: "Software Development" }],
       },
 
+    ],
+
+    education:[
       {
         period: "2021 - Actualidad",
         company: "UADE",
         position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
         tags: [{ tag: "Programación" }, { tag: "Negocios" }],
-      },
+      }
     ],
 
     projects: [

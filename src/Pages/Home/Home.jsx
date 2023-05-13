@@ -13,7 +13,7 @@ export const Home = () => {
           className=" font-black  text-7xl py-3 animate__bounceInDown "
         >
           {" "}
-          Welcome To DevPort
+          Welcome To Cecilia CV
         </h1>
         <p className="text-3xl font-light mt-5 text-white">The land of opportunity</p>
         <Link

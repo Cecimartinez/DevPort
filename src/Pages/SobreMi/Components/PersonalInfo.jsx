@@ -1,13 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-const PersonalInfo = ({ name, email,linkedin,phone,
-  location,
-  imageSrc,
-  professionalProfile,
-  strengths,
-  languages,
-}) => (
-  <div className="bg-[#212224] rounded-lg shadow-md p-4 my-3 sm:flex sm:items-center text-white">
+const PersonalInfo = ({ name, email, linkedin, phone, location, imageSrc, professionalProfile, strengths, languages }) => (
+  <div className="bg-[#212224] rounded-lg shadow-md p-4 my-16 sm:flex sm:items-center text-white flex items-center justify-center">
 
     <div className="sm:mr-6 mb-4 sm:mb-0 flex-shrink-0">
       <img src={imageSrc} className="w-32 h-32 object-cover rounded-full" alt={`Profile of ${name}`} />
