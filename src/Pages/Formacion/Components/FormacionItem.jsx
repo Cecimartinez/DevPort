@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 const FormacionItem = ({ period, company, position, workimage, tags}) => {
 
   return (
-    <div className="w-full my-10  px-6 rounded-md shadow-md md:flex   ">
+    <div className="w-full py-8  px-6 rounded-md shadow-md md:flex   ">
       <div className="md:w-1/6 md:pr-4 md:flex-shrink-0">
         <div className="bg-[#c7bcff] text-[#53f] rounded-full w-20 h-20 flex items-center justify-center mx-auto">
           {workimage}
