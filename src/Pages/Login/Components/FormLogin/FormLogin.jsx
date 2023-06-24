@@ -1,21 +1,31 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Await, useNavigate } from "react-router-dom";
+import { login } from "../../../../api/login.api";
 
 export const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email === "user@example.com" && password === "password123") {
-      // redirigir a /contact-table
-      console.log("redirigiendo a /contact-table");
-      navigate("/contact-table");
-    } else {
-      // mostrar mensaje de error
-      console.log("email o contraseña incorrectos");
-    }
+    // if (email === "user@example.com" && password === "password123") {
+    //   // redirigir a /contact-table
+    //   console.log("redirigiendo a /contact-table");
+    //   navigate("/contact-table");
+    // } else {
+    //   // mostrar mensaje de error
+    //   console.log("email o contraseña incorrectos");
+    // }
+
+    const response = await login(email, password);
+    console.log(response);
+    console.log("Se guardó el token en sessionStorage");
+    // sessionStorage.setItem("access-token", response.token);
+    navigate("/contact-table")
+
+
+
   };
 
   return (
