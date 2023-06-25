@@ -1,34 +1,28 @@
 export const formContact = async (contact) => {
-  console.log(contact.fullname);
-  console.log(contact.email);
-  console.log(contact.telephone);
-  console.log(contact.message);
 
-  const myHeaders = new Headers();
-  myHeaders.append("Content-type", "application/json");
+  var myHeaders = new Headers();
+  myHeaders.append("jwt", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDk2Njc0MTc2ZmEzMmQyYmFlYzIzYzEiLCJuYW1lIjoiRmVybmFuZG8gSm9zw6kiLCJsYXN0bmFtZSI6IkxvbmdpbiIsImVtYWlsIjoiZmVybG9uZ2luQGhvdG1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkWXk3b0ZpLjQwZlNxUHNPN2N1bU41T1RuZ280VkxkWnlBZFd3RTdXTWZBOTlvb0dBdFhxMVMiLCJfX3YiOjAsImlhdCI6MTY4NzYzMzMyNSwiZXhwIjoxNjg3NzE5NzI1fQ.P4jGgO6KAE1U17_UIKxy7ZETTHy2PbmtXUMYIyDHm7I");
+  myHeaders.append("Content-Type", "application/json");
 
-  const raw = JSON.stringify({
-    contact: {
-      "fullname": contact.fullname,
-      "email": contact.email,
-      "telephone": contact.telephone,
-      "message": contact.message,
-    },
-  });
+var raw = JSON.stringify({
+  "contact": {
+    "fullname": contact.fullname,
+    "email": contact.email,
+    "telephone": contact.telephone,
+    "message": contact.message
+  }
+});
 
-  const requestOptions = {
-    method: 'POST',
-    headers: myHeaders,
-    body: raw,
-    redirect: 'follow',
-    mode: "cors",
-  };
-
-  const response = await fetch("http://localhost:8080/api/contactos", requestOptions);
-  const jsonData = await response.json();
-  console.log(jsonData);
-  console.log(jsonData.errors);
-
-
-  return jsonData;
+var requestOptions = {
+  method: 'POST',
+  headers: myHeaders,
+  body: raw,
+  redirect: 'follow'
 };
+
+fetch("http://localhost:8080/api/contactos", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+};
+
