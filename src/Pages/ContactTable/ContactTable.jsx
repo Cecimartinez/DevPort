@@ -1,4 +1,24 @@
+import React, { useState, useEffect } from "react";
+import getContacts from "../../api/contactos.api";
+
 export const ContactTable = () => {
+  const [contacts, setContacts] = useState([]);
+  const accessToken = sessionStorage.getItem("access-token");
+
+  useEffect(() => {
+    const fetchContacts = async () => {
+      try {
+        await getContacts(setContacts);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    if (accessToken) {
+      fetchContacts();
+    }
+  }, [accessToken]);
+
   return (
     <div
       id="profesionales"
@@ -13,167 +33,72 @@ export const ContactTable = () => {
                   <tr>
                     <th
                       scope="col"
-                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left  uppercase bg-[#212224]  border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left uppercase bg-[#212224] border-b border-gray-200"
                     >
-                      User
+                      Contact
                     </th>
                     <th
                       scope="col"
-                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left  uppercase bg-[#212224]  border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left uppercase bg-[#212224] border-b border-gray-200"
                     >
-                      Role
+                      Email
                     </th>
                     <th
                       scope="col"
-                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left  uppercase bg-[#212224]  border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left uppercase bg-[#212224] border-b border-gray-200"
                     >
-                      Created at
+                      Telephone
                     </th>
                     <th
                       scope="col"
-                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left  uppercase bg-[#212224]  border-b border-gray-200"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left uppercase bg-[#212224] border-b border-gray-200"
                     >
-                      status
+                      Message
+                    </th>
+                    <th
+                      scope="col"
+                      className="px-4 py-3 md:px-5 md:py-3 text-sm md:text-base font-normal text-left uppercase bg-[#212224] border-b border-gray-200"
+                    >
+                      Status
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td className="px-4 py-4 md:px-5 md:py-5 text-sm md:text-base bg-[#212224]  border-b border-gray-200">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0">
-                          <a href="#" className="relative block">
-                            <span className="material-symbols-outlined">account_circle</span>
-                          </a>
+                  {contacts.map((contact) => (
+                    <tr key={contact._id}>
+                      <td className="px-4 py-4 md:px-5 md:py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
+                        <div className="flex items-center">
+                          <div className="flex-shrink-0">
+                            <a href="#" className="relative block">
+                              <span className="material-symbols-outlined">
+                                account_circle
+                              </span>
+                            </a>
+                          </div>
+                          <div className="ml-3">
+                            <p className="font-semibold">
+                              {contact.name} {contact.lastName}
+                            </p>
+                            <p className="text-sm md:text-base">
+                              {contact.company}
+                            </p>
+                          </div>
                         </div>
-                        <div className="ml-3">
-                          <p className=" whitespace-no-wrap">
-                            Jean marc
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">Admin</p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        12/09/2020
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-white">
-                        <span
-                          aria-hidden="true"
-                          className="absolute inset-0 bg-[#53f] rounded-full opacity-50"
-                        ></span>
-                        <span className="relative">Leído</span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0">
-                          <a href="#" className="relative block">
-                          <span className="material-symbols-outlined">account_circle</span>
-                          </a>
-                        </div>
-                        <div className="ml-3">
-                          <p className=" whitespace-no-wrap">
-                            Marcus coco
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        Designer
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        01/10/2012
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-white">
-                        <span
-                          aria-hidden="true"
-                          className="absolute inset-0 bg-[#53f] rounded-full opacity-50"
-                        ></span>
-                        <span className="relative">Leído</span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0">
-                          <a href="#" className="relative block">
-                          <span className="material-symbols-outlined">account_circle</span>
-                          </a>
-                        </div>
-                        <div className="ml-3">
-                          <p className=" whitespace-no-wrap">
-                            Ecric marc
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        Developer
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        02/10/2018
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-white">
-                        <span
-                          aria-hidden="true"
-                          className="absolute inset-0 bg-[#53f] rounded-full opacity-50"
-                        ></span>
-                        <span className="relative">Leído</span>
-                      </span>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <div className="flex items-center">
-                        <div className="flex-shrink-0">
-                          <a href="#" className="relative block">
-                          <span className="material-symbols-outlined">account_circle</span>
-                          </a>
-                        </div>
-                        <div className="ml-3">
-                          <p className=" whitespace-no-wrap">
-                            Julien Huger
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">User</p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <p className=" whitespace-no-wrap">
-                        23/09/2010
-                      </p>
-                    </td>
-                    <td className="px-5 py-5 text-sm bg-[#212224]  border-b border-gray-200">
-                      <span className="relative inline-block px-3 py-1 font-semibold leading-tight text-white">
-                        <span
-                          aria-hidden="true"
-                          className="absolute inset-0 bg-[#53f] rounded-full opacity-50"
-                        ></span>
-                        <span className="relative">Leído</span>
-                      </span>
-                    </td>
-                  </tr>
+                      </td>
+                      <td className="px-4 py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
+                        <p className="whitespace-no-wrap">{contact.email}</p>
+                      </td>
+                      <td className="px-4 py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
+                        <p className="whitespace-no-wrap">{contact.telephone}</p>
+                      </td>
+                      <td className="px-4 py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
+                        <p className="whitespace-no-wrap">{contact.message}</p>
+                      </td>
+                      <td className="px-4 py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
+                        <p className="whitespace-no-wrap">{contact.status}</p>
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -183,3 +108,4 @@ export const ContactTable = () => {
     </div>
   );
 };
+
