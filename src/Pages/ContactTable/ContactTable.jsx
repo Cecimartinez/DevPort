@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import getContacts from "../../api/contactos.api";
+import handleDeleteContact from "../../api/eliminarContacto.api";
 
 export const ContactTable = () => {
   const [contacts, setContacts] = useState([]);
@@ -77,10 +78,7 @@ export const ContactTable = () => {
                           </div>
                           <div className="ml-3">
                             <p className="font-semibold">
-                              {contact.name} {contact.lastName}
-                            </p>
-                            <p className="text-sm md:text-base">
-                              {contact.company}
+                              {contact.fullname}
                             </p>
                           </div>
                         </div>
@@ -95,7 +93,15 @@ export const ContactTable = () => {
                         <p className="whitespace-no-wrap">{contact.message}</p>
                       </td>
                       <td className="px-4 py-5 text-sm md:text-base bg-[#212224] border-b border-gray-200">
-                        <p className="whitespace-no-wrap">{contact.status}</p>
+                        <div className="flex-shrink-0">
+                          <a href="#" className="relative block">
+                            <span
+                              className="material-symbols-outlined"
+                              onClick={() => handleDeleteContact(contact._id)}>
+                              delete
+                            </span>
+                          </a>
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -108,4 +114,3 @@ export const ContactTable = () => {
     </div>
   );
 };
-
