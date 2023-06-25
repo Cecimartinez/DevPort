@@ -1,7 +1,27 @@
+import { formContact } from "../../../../api/formContact.api";
+import { useState } from "react";
+
 export const FormContact = () => {
+
+  const [email, setEmail] = useState("");
+  const [fullname, setFullname] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const response = await formContact(email, fullname, telephone,message);
+    console.log(response, "response");
+    sessionStorage.setItem("access-token", response.token);
+
+  };
+
   return (
     <>
-      <form className="w-full max-w-lg  py-4 px-5 rounded-md ">
+      <form 
+      onSubmit={handleSubmit}
+      className="w-full max-w-lg  py-4 px-5 rounded-md ">
         <div className="flex flex-wrap -mx-3 mb-6">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
             <label
@@ -14,6 +34,8 @@ export const FormContact = () => {
               id="grid-first-name"
               type="text"
               placeholder="Name"
+              onChange={(e) => setFullname(e.target.value)}
+              required
             />
           </div>
 
@@ -28,13 +50,11 @@ export const FormContact = () => {
               id="grid-first-name"
               type="number"
               placeholder="telephone"
+              onChange={(e) => setTelephone(e.target.value)}
+              required
             />
           </div>
         </div> 
-
-
-
-
 
 
         <div className="flex flex-wrap -mx-3 mb-6">
@@ -45,9 +65,11 @@ export const FormContact = () => {
               E-mail
             </label>
             <input
-              className="appearance-none block w-full bg-[#212224]  text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500"
+              className="appearance-none block w-full bg-[#212224]  text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500"
               id="email"
               type="email"
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
         </div>
@@ -59,8 +81,10 @@ export const FormContact = () => {
               Message
             </label>
             <textarea
-              className=" no-resize appearance-none block w-full bg-[#212224]  text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500 h-24 resize-none"
+              className=" no-resize appearance-none block w-full bg-[#212224]  text-white border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none  focus:border-gray-500 h-24 resize-none"
               id="message"
+              onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
           </div>
         </div>

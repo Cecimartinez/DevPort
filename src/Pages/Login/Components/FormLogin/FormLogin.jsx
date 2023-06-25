@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Await, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { login } from "../../../../api/login.api";
 
 export const FormLogin = () => {
@@ -21,7 +21,7 @@ export const FormLogin = () => {
     const response = await login(email, password);
     console.log(response);
     console.log("Se guardó el token en sessionStorage");
-    // sessionStorage.setItem("access-token", response.token);
+    sessionStorage.setItem("access-token", response.token);
     navigate("/contact-table")
 
 
