@@ -1,6 +1,8 @@
 export const formContact = async (contact) => {
-  console.log(contact);
   console.log(contact.fullname);
+  console.log(contact.email);
+  console.log(contact.telephone);
+  console.log(contact.message);
 
   const myHeaders = new Headers();
   myHeaders.append("Content-type", "application/json");
