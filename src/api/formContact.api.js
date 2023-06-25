@@ -1,13 +1,17 @@
-export const formContact = async (email, fullname, telephone,message) => {
+export const formContact = async (contact) => {
+  console.log(contact);
+  console.log(contact.fullname);
 
   const myHeaders = new Headers();
   myHeaders.append("Content-type", "application/json");
 
   const raw = JSON.stringify({
-    "fullname": fullname,
-    "email": email,
-    "telephone": telephone,
-    "message": message
+    contact: {
+      fullname: contact.fullname,
+      email: contact.email,
+      telephone: contact.telephone,
+      message: contact.message,
+    },
   });
 
   const requestOptions = {
@@ -15,11 +19,14 @@ export const formContact = async (email, fullname, telephone,message) => {
     headers: myHeaders,
     body: raw,
     redirect: 'follow',
-    mode: "cors"
+    mode: "cors",
   };
 
-  const response = await fetch("http://localhost:8080/api/contactos", requestOptions)
+  const response = await fetch("http://localhost:8080/api/contactos", requestOptions);
   const jsonData = await response.json();
+  console.log(jsonData);
+  console.log(jsonData.errors);
+
 
   return jsonData;
-}
+};

@@ -32,7 +32,7 @@ export const Formacion = () => {
 
 
       <div class="w-full bg-[#53f] shadow-lg rounded-2xl">
-        <p class="p-4 font-bold text-black text-md dark:text-white border-b-2">My Tasks</p>
+        <p class="p-4 mt-5 font-bold text-black text-md dark:text-white border-b-2">My Tasks</p>
         <ul>
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
