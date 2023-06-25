@@ -7,10 +7,10 @@ export const formContact = async (contact) => {
 
   const raw = JSON.stringify({
     contact: {
-      fullname: contact.fullname,
-      email: contact.email,
-      telephone: contact.telephone,
-      message: contact.message,
+      "fullname": contact.fullname,
+      "email": contact.email,
+      "telephone": contact.telephone,
+      "message": contact.message,
     },
   });
 

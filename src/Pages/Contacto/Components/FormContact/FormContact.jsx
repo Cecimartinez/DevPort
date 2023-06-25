@@ -2,19 +2,24 @@ import { formContact } from "../../../../api/formContact.api";
 import { useState } from "react";
 
 export const FormContact = () => {
-
   const [email, setEmail] = useState("");
   const [fullname, setFullname] = useState("");
   const [telephone, setTelephone] = useState("");
   const [message, setMessage] = useState("");
 
+  const contact = {
+    email,
+    fullname,
+    telephone,
+    message
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const response = await formContact(email, fullname, telephone,message);
+
+    const response = await formContact(contact);
     console.log(response, "response");
     sessionStorage.setItem("access-token", response.token);
-
   };
 
   return (
