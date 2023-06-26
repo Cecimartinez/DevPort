@@ -11,6 +11,7 @@ export const ROUTE_PATHS = {
   SKILLS: "skills",
   PROJECTS: "projects",
   CONTACTO: "contact",
+  SIGNIN:"signin",
 
   CONTACTTABLE:"contact-table"
 };

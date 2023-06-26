@@ -12,6 +12,7 @@ import { Certifications } from "../Pages/Certifications/Certifications";
 import { ContactTable } from "../Pages/ContactTable/ContactTable";
 import { Projects } from "../Pages/Projects/Projects";
 import { Education } from "../Pages/Education/Education";
+import { SignIn } from "../Pages/SignIn/SignIn";
 
 export const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ export const AppRouter = () => {
         <Route index element={<Home />} />
         <Route path={ROUTE_PATHS.LOGIN} element={<Login />} />
         <Route path={ROUTE_PATHS.PROFESIONALES} element={<Profesionales />} />
+        <Route path={ROUTE_PATHS.SIGNIN} element={<SignIn/>} />
         
         <Route path={`${ROUTE_PATHS.PROFESSIONALPROLFILE}/:id`} element={<ProfessionalProfile/>} >
           <Route path={`${ROUTE_PATHS.SOBREMI}`} element={<SobreMi />} />

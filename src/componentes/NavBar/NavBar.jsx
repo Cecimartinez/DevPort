@@ -31,6 +31,8 @@ export const NavBar = () => {
           </div>
 
           <div className="flex justify-end  text-center items-center text-white  pt-2">
+
+        
             <Link
               to="/login"
               value="Login"
