@@ -5,27 +5,27 @@ import { login } from "../../../../api/login.api";
 export const FormLogin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [status, setStatus] = useState(""); // Variable de estado para el estado de la respuesta
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // if (email === "user@example.com" && password === "password123") {
-    //   // redirigir a /contact-table
-    //   console.log("redirigiendo a /contact-table");
-    //   navigate("/contact-table");
-    // } else {
-    //   // mostrar mensaje de error
-    //   console.log("email o contraseña incorrectos");
-    // }
-
-    const response = await login(email, password);
-    console.log(response);
-    console.log("Se guardó el token en sessionStorage");
-    sessionStorage.setItem("access-token", response.token);
-    navigate("/contact-table")
-
-
-
+    try {
+      const response = await login(email, password);
+      console.log(response.status); // Código de estado
+      console.log(response.data); // Datos JSON de la respuesta
+    
+      if (response.status === 200) {
+        console.log("Se guardó el token en sessionStorage");
+        sessionStorage.setItem("access-token", response.data.token);
+        navigate("/contact-table");
+      } else {
+        alert("Email or password incorrect");
+      }
+    } catch (error) {
+      console.error(error);
+      setStatus("Error: " + error.message);
+    }
   };
 
   return (

@@ -1,11 +1,10 @@
 export const login = async (email, password) => {
-
   const myHeaders = new Headers();
   myHeaders.append("Content-type", "application/json");
 
   const raw = JSON.stringify({
-    "email": email,
-    "password": password
+    email: email,
+    password: password
   });
 
   const requestOptions = {
@@ -16,8 +15,11 @@ export const login = async (email, password) => {
     mode: "cors"
   };
 
-  const response = await fetch("http://localhost:8080/api/usuarios/login", requestOptions)
+  const response = await fetch("http://localhost:8080/api/usuarios/login", requestOptions);
   const jsonData = await response.json();
 
-  return jsonData;
-}
+  return {
+    status: response.status,
+    data: jsonData
+  };
+};

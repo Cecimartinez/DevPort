@@ -97,12 +97,8 @@ export const FormContact = () => {
         </div>
         <div className="md:flex md:items-center ">
           <div className="md:w-1/3 ">
-            <button
-              className="shadow bg-[#53ff] hover:bg-[#5e3eff] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-md"
-              type="submit"
-            >
-              Send
-            </button>
+            <button className="shadow bg-[#53ff] hover:bg-[#5e3eff] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-md"
+              type="submit">Send</button>
           </div>
           <div className="md:w-2/3"></div>
         </div>
