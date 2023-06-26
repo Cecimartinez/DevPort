@@ -1,20 +1,41 @@
 import { useState } from "react";
+import { crearUsuario } from "../../api/crearUsuario.api"
 
 export const CreateAccount = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    lastname: "",
-    email: "",
-    password: "",
-  });
+  const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [status, setStatus] = useState(""); // Variable de estado para el estado de la respuesta
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const usuario = {
+    name,
+    lastname,
+    email,
+    password
   };
 
-  const handleSubmit = (e) => {
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(formData);
+  
+    const response = await crearUsuario(name, lastname, email, password);
+    console.log(response, "response");
+    console.log(response.status); // Código de estado
+    console.log(name, lastname, email, password);
+  
+    if (response.status === 200) {
+      console.log("Se guardó el token en sessionStorage");
+      sessionStorage.setItem("access-token", response.token);
+      alert("Usuario registrado correctamente!");
+    } else if (response.status === 400) {
+      alert("Ya hay un usuario registrado con ese email");
+    } else {
+      alert("Ocurrió un error al realizar el registro");
+    }
   };
 
   return (
@@ -32,8 +53,7 @@ export const CreateAccount = () => {
             type="text"
             name="name"
             id="name"
-            value={formData.name}
-            onChange={handleChange}
+            onChange={(e) => setName(e.target.value)}
             className="w-full px-3 py-2 border rounded-md bg-[#212224] "
             placeholder="Nombre"
           />
@@ -46,8 +66,7 @@ export const CreateAccount = () => {
             type="text"
             name="lastname"
             id="lastname"
-            value={formData.lastname}
-            onChange={handleChange}
+            onChange={(e) => setLastname(e.target.value)}
             className="w-full px-3 py-2 border rounded-md text-white bg-[#212224] "
             placeholder="Apellido"
           />
@@ -60,8 +79,7 @@ export const CreateAccount = () => {
             type="email"
             name="email"
             id="email"
-            value={formData.email}
-            onChange={handleChange}
+            onChange={(e) => setEmail(e.target.value)}
             className="w-full px-3 py-2 border rounded-md text-white bg-[#212224] "
             placeholder="Correo electrónico"
           />
@@ -74,14 +92,13 @@ export const CreateAccount = () => {
             type="password"
             name="password"
             id="password"
-            value={formData.password}
-            onChange={handleChange}
+            onChange={(e) => setPassword(e.target.value)}
             className="w-full px-3 py-2 border rounded-md text-white bg-[#212224] "
             placeholder="Contraseña"
           />
         </div>
         <button
-          type="submit"
+          type="submit" onClick={handleSubmit}
           className="w-full py-2 px-4 bg-[#53f] text-white rounded-md"
         >
           Registrarse

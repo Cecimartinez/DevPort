@@ -1,26 +1,29 @@
-export const crearUsuario = async {name, lastname, email, password} => {
-    
-    var myHeaders = new Headers();
+export const crearUsuario = async ({ name, lastname, email, password }) => {
+    const myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
-
-    var raw = JSON.stringify({
-    "name": name,
-    "lastname": lastname,
-    "email": email,
-    "password": password
+  
+    const raw = JSON.stringify({
+      name: name,
+      lastname: lastname,
+      email: email,
+      password: password
     });
-
-    var requestOptions = {
-    method: 'POST',
-    headers: myHeaders,
-    body: raw,
-    redirect: 'follow'
+  
+    const requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: raw,
+      redirect: 'follow'
     };
-
-    fetch("http://localhost:8080/api/usuarios", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-}
-
-export default crearUsuario;
+  
+    const response = await fetch("http://localhost:8080/api/usuarios", requestOptions);
+    const jsonData = await response.text();
+  
+    return {
+      status: response.status,
+      data: jsonData
+    };
+  };
+  
+  export default crearUsuario;
+  
