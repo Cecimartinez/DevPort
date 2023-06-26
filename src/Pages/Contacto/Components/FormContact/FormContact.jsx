@@ -6,6 +6,7 @@ export const FormContact = () => {
   const [fullname, setFullname] = useState("");
   const [telephone, setTelephone] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState(""); // Variable de estado para el estado de la respuesta
 
   const contact = {
     email,
@@ -16,11 +17,30 @@ export const FormContact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     const response = await formContact(contact);
     console.log(response, "response");
-    sessionStorage.setItem("access-token", response.token);
+    console.log(response.status); // Código de estado
+  
+    if (response.status === 201) {
+      console.log("Se guardó el token en sessionStorage");
+      sessionStorage.setItem("access-token", response.token);
+      alert("Formulario de contacto enviado exitosamente!");
+    } else if (response.status === 400) {
+      alert("Ya hay un contacto registrado con ese email");
+    } else {
+      alert("Ocurrió un error al enviar el formulario");
+    }
   };
+  
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   const response = await formContact(contact);
+  //   console.log(response, "response");
+  //   sessionStorage.setItem("access-token", response.token);
+  //   console.log(response.status); // Código de estado
+  // };
 
   return (
     <>
@@ -98,7 +118,7 @@ export const FormContact = () => {
         <div className="md:flex md:items-center ">
           <div className="md:w-1/3 ">
             <button className="shadow bg-[#53ff] hover:bg-[#5e3eff] focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded-md"
-              type="submit">Send</button>
+              type="submit" onClick={handleSubmit}>Send</button>
           </div>
           <div className="md:w-2/3"></div>
         </div>
