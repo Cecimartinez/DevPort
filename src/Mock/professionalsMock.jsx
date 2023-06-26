@@ -203,6 +203,13 @@ export const professionals = [
         position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
         tags: [{ tag: "Programación" }, { tag: "Negocios" }],
+      },
+      {
+        period: "2016 - 2020",
+        company: "Maria Montessori School",
+        position: "Bachiller en Comunicación",
+        workimage: <span class="material-symbols-outlined">school</span>,
+        tags: [{ tag: "Relaciones Interpersonales" }, { tag: "Filosofia" }],
       }
     ],
 

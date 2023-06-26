@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { professionals } from "../../Mock/professionalsMock";
 import FormacionItem from "../Formacion/Components/FormacionItem";
-import { ProgressPorcentageEducation } from "./components/ProgressPorcentageEducation";
+// import { ProgressPorcentageEducation } from "./components/ProgressPorcentageEducation";
 
 export const Education = () => {
   const { id: professionalId } = useParams();
@@ -11,12 +11,12 @@ export const Education = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 max-w-4xl h-screen overflow-y-auto">
+    <div className="container mx-auto mt-5 px-4 max-w-4xl h-screen overflow-y-auto">
       <div className="grid grid-cols-1 sm:grid-cols-1">
-        <div className="border border-[#53f] rounded-lg shadow w-full mt-5">
+        <div className="rounded-lg shadow w-full mt-5">
           {professional && (
             <>
-              <ul className="flex justify-center items-center flex-col gap-1">
+              <ul className="flex my-10 border border-[#53f] justify-center items-center flex-col gap-1">
                 {professional.education.map((education, index) => (
                   <FormacionItem
                     key={index}
@@ -32,7 +32,7 @@ export const Education = () => {
           )}
         </div>
       </div>
-      <ProgressPorcentageEducation />
+      {/* <ProgressPorcentageEducation /> */}
     </div>
   );
 };
