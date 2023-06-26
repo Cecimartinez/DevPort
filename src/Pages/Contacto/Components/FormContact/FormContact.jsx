@@ -7,6 +7,9 @@ export const FormContact = () => {
   const [telephone, setTelephone] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(""); // Variable de estado para el estado de la respuesta
+  console.log("Me traigo el token una vez que estoy logeado")
+  const accessToken = sessionStorage.getItem("access-token");
+
 
   const contact = {
     email,
@@ -18,7 +21,7 @@ export const FormContact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
   
-    const response = await formContact(contact);
+    const response = await formContact(accessToken,contact);
     console.log(response, "response");
     console.log(response.status); // Código de estado
   

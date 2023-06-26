@@ -4,12 +4,13 @@ import handleDeleteContact from "../../api/eliminarContacto.api";
 
 export const ContactTable = () => {
   const [contacts, setContacts] = useState([]);
+  console.log("Me traigo el token una vez que estoy logeado")
   const accessToken = sessionStorage.getItem("access-token");
 
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        await getContacts(setContacts);
+        await getContacts(accessToken, setContacts);
       } catch (error) {
         console.log(error);
       }
@@ -18,7 +19,7 @@ export const ContactTable = () => {
     if (accessToken) {
       fetchContacts();
     }
-  }, [accessToken]);
+  }, [setContacts, accessToken]);
 
   return (
     <div
@@ -97,7 +98,7 @@ export const ContactTable = () => {
                           <a href="#" className="relative block">
                             <span
                               className="material-symbols-outlined"
-                              onClick={() => handleDeleteContact(contact._id)}>
+                              onClick={() => handleDeleteContact(accessToken, contact._id)}>
                               delete
                             </span>
                           </a>
