@@ -15,23 +15,19 @@ export const CreateAccount = () => {
     password
   };
 
-  // const handleChange = (e) => {
-  //   setFormData({ ...formData, [e.target.name]: e.target.value });
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    const response = await crearUsuario(name, lastname, email, password);
+
+    const response = await crearUsuario(usuario);
     console.log(response, "response");
     console.log(response.status); // Código de estado
-    console.log(name, lastname, email, password);
-  
-    if (response.status === 200) {
+    console.log(response.data);
+
+    if (response.status === 201) {
       console.log("Se guardó el token en sessionStorage");
       sessionStorage.setItem("access-token", response.token);
       alert("Usuario registrado correctamente!");
-    } else if (response.status === 400) {
+    } else if (response.status === 500) {
       alert("Ya hay un usuario registrado con ese email");
     } else {
       alert("Ocurrió un error al realizar el registro");
