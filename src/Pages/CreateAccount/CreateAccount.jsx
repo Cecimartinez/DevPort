@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const SignIn = () => {
+export const CreateAccount = () => {
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
