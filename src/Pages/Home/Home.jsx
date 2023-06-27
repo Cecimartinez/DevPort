@@ -21,7 +21,7 @@ export const Home = () => {
           className="px-5 py-2 inline-block bg-[#564dfb] hover:bg-[#4339ff] focus:ring-[#726AFF] text-white transition-colors mt-10 rounded-full hover:animate-pulse"
           href=""
         >
-          Get Start
+          Get Started
         </Link>
       </div>
     </div>
