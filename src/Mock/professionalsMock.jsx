@@ -202,14 +202,14 @@ export const professionals = [
         company: "UADE",
         position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
-        tags: [{ tag: "Programación" }, { tag: "Negocios" }],
+        tags: [{ tag: "Programación" }, { tag: "Negocios" }, { tag: "Promedio: 9.0" }],
       },
       {
         period: "2016 - 2020",
         company: "Maria Montessori School",
         position: "Bachiller en Comunicación",
         workimage: <span class="material-symbols-outlined">school</span>,
-        tags: [{ tag: "Relaciones Interpersonales" }, { tag: "Filosofia" }],
+        tags: [{ tag: "Ingles" }, { tag: "Portugués" }, { tag: "Promedio: 8.93" }],
       }
     ],
 

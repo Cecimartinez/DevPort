@@ -12,25 +12,27 @@ export const SobreMi = () => {
   );
 
   return (
-    <div className="container mx-auto px-4  max-w-[1040px]  h-full overflow-y-auto ">
-      <Subtitulo
-        className="text-base text-center font-medium"
-        value=""
-      />
-      {professionalInfo && (
-        <PersonalInfo
-          name={professionalInfo?.name}
-          email={professionalInfo?.email}
-          linkedin={professionalInfo?.linkedin}
-          phone={professionalInfo?.phone}
-          location={professionalInfo?.city}
-          imageSrc={professionalInfo?.srcImg}
-          professionalProfile={professionalInfo?.about}
-          strengths={professionalInfo?.strengths}
-          languages={professionalInfo?.languages}
-          certifications={professionalInfo?.certifications}
+    <div className="flex items-center justify-center h-screen bg-600 to-teal-300 overflow-y-auto">
+      <div className="container mx-auto px-4  max-w-[1040px]  h-full overflow-y-auto">
+        <Subtitulo
+          className="text-base text-center font-medium"
+          value=""
         />
-      )}
+        {professionalInfo && (
+          <PersonalInfo
+            name={professionalInfo?.name}
+            email={professionalInfo?.email}
+            linkedin={professionalInfo?.linkedin}
+            phone={professionalInfo?.phone}
+            location={professionalInfo?.city}
+            imageSrc={professionalInfo?.srcImg}
+            professionalProfile={professionalInfo?.about}
+            strengths={professionalInfo?.strengths}
+            languages={professionalInfo?.languages}
+            certifications={professionalInfo?.certifications}
+          />
+        )}
+      </div>
     </div>
   );
 };

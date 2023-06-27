@@ -9,13 +9,13 @@ const PersonalInfo = ({ name, email, linkedin, phone, location, imageSrc, profes
       <h2 className="text-xl font-semibold mb-2 sm:mb-0 text-[#8269ff]">{name} </h2>
       <p className="text-base font-medium mb-2">{location}</p>
       <div className="mt-6">
-        <h3 className="text-lg font-medium text-[#c3b7ff]">Contact Information</h3>
+        <h3 className="text-lg font-medium text-[#c3b7ff]">Información de Contacto</h3>
         <div className="mt-2">
           <p className="text-base">
             <span className="font-medium">Email:</span> {email}
           </p>
           <p className="text-base">
-            <span className="font-medium">Phone:</span> {phone}
+            <span className="font-medium">Teléfono:</span> {phone}
           </p>
           <p className="text-base">
             <span className="font-medium">LinkedIn:</span>{" "}
@@ -26,17 +26,17 @@ const PersonalInfo = ({ name, email, linkedin, phone, location, imageSrc, profes
         </div>
       </div>
       <div className="mt-6">
-        <h3 className="text-lg font-medium text-[#c3b7ff]">Professional Profile</h3>
+        <h3 className="text-lg font-medium text-[#c3b7ff]">Perfil Profesional</h3>
         <p className="text-base">{professionalProfile}</p>
       </div>
       <div className="mt-6">
-        <h3 className="text-lg font-medium text-[#c3b7ff]">Strengths</h3>
+        <h3 className="text-lg font-medium text-[#c3b7ff]">Fortalezas</h3>
         <ul className="list-disc list-inside text-base">
           <li>{strengths}</li>
         </ul>
       </div>
       <div className="mt-4">
-        <h3 className="text-lg font-medium text-[#c3b7ff]">Languages</h3>
+        <h3 className="text-lg font-medium text-[#c3b7ff]">Idiomas</h3>
         <ul className="list-disc list-inside text-base">
           {languages.map((language) => (
             <li key={language.language}>{language.language}</li>
