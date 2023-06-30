@@ -37,7 +37,7 @@ export const Formacion = () => {
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
               <span class="mx-4">01</span>
-              <span>Refinamiento y análisis de prioridad de los requerimientos del negocio.</span>
+              <span>Desarrollo de aplicaciones web completas, incluyendo frontend y backend.</span>
             </div>
             <svg width="20" height="20" fill="currentColor" class="mx-4 text-gray-400 dark:text-gray-300" viewBox="0 0 1024 1024">
               <path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="currentColor"></path>
@@ -47,7 +47,7 @@ export const Formacion = () => {
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
               <span class="mx-4">02</span>
-              <span>Manejo de los incidentes de las aplicaciones del negocio.</span>
+              <span>Mantenimiento, actualización y solución de problemas en aplicaciones existentes.</span>
             </div>
             <svg width="20" height="20" fill="currentColor" class="mx-4 text-gray-400 dark:text-gray-300" viewBox="0 0 1024 1024">
               <path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="currentColor"></path>
@@ -57,7 +57,7 @@ export const Formacion = () => {
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
               <span class="mx-4">03</span>
-              <span>Consulta y actualización de datos utilizando SQLServer</span>
+              <span>Diseño y administración de bases de datos.</span>
             </div>
             <svg width="20" height="20" fill="currentColor" class="mx-4 text-gray-400 dark:text-gray-300" viewBox="0 0 1024 1024">
               <path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="currentColor"></path>
@@ -67,7 +67,7 @@ export const Formacion = () => {
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
               <span class="mx-4">04</span>
-              <span>Desarrollo de nuesvas features y soluciones de implementación de código.</span>
+              <span>Colaboración efectiva con otros profesionales y gestión de proyectos.</span>
             </div>
             <svg width="20" height="20" fill="currentColor" class="mx-4 text-gray-400 dark:text-gray-300" viewBox="0 0 1024 1024">
               <path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="currentColor"></path>
@@ -77,7 +77,7 @@ export const Formacion = () => {
           <li class="flex items-center justify-between py-3 text-gray-600 border-b-2 border-gray-100 dark:text-gray-200 dark:border-gray-800">
             <div class="flex items-center justify-start text-sm">
               <span class="mx-4">05</span>
-              <span>Utilización de metodología de scrum para análisis y desarrollo de software.</span>
+              <span>Optimización de rendimiento, implementación de medidas de seguridad, resolución de problemas, integración de APIs y desarrollo de pruebas automatizadas.</span>
             </div>
             <svg width="20" height="20" fill="currentColor" class="mx-4 text-gray-400 dark:text-gray-300" viewBox="0 0 1024 1024">
               <path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="currentColor"></path>

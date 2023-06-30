@@ -13,11 +13,11 @@ export const Home = () => {
           className=" font-black  text-7xl py-3 animate__bounceInDown "
         >
           {" "}
-          Welcome To Fernando's CV
+          Welcome To Cecilia's CV
         </h1>
         <p className="text-3xl font-light mt-5 text-white">The land of opportunity</p>
         <Link
-          to="/professionalprofile/fernando-longin/aboutme"
+          to="/professionalprofile/cecilia-martinez/aboutme"
           className="px-5 py-2 inline-block bg-[#564dfb] hover:bg-[#4339ff] focus:ring-[#726AFF] text-white transition-colors mt-10 rounded-full hover:animate-pulse"
           href=""
         >

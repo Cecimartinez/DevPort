@@ -8,9 +8,10 @@ export const FormContact = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState(""); // Variable de estado para el estado de la respuesta
   console.log("Me traigo el token una vez que estoy logeado")
-  const accessToken = sessionStorage.getItem("access-token");
+  const accessToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDlmMTg5Mzc2YjE3Nzg5MjUzNDA4NGUiLCJuYW1lIjoiQ2VjaWxpYSIsImxhc3RuYW1lIjoiTWFydGluZXoiLCJlbWFpbCI6Im1hcnRpbmV6Y2VjaWxpYTI3MDdAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkWXk3b0ZpLjQwZlNxUHNPN2N1bU41T1RuZ280VkxkWnlBZFd3RTdXTWZBOTlvb0dBdFhxMVMiLCJfX3YiOjAsImlhdCI6MTY4ODE1NTU3NywiZXhwIjoxNjg4MjQxOTc3fQ.8Yo1b6_4tk1QaLEVT7qDezxJQLGtMtxVq-kcMZ-A-Yc";
 
 
+  
   const contact = {
     email,
     fullname,
@@ -38,12 +39,16 @@ export const FormContact = () => {
   
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
+  //   console.log(accessToken);
 
-  //   const response = await formContact(contact);
+  //   const response = await formContact(accessToken, contact);
   //   console.log(response, "response");
   //   sessionStorage.setItem("access-token", response.token);
   //   console.log(response.status); // Código de estado
   // };
+
+
+  
 
   return (
     <>

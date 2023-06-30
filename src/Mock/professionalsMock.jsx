@@ -107,7 +107,7 @@ export const professionals = [
         company: "Freelance ",
         position: "Developer Fullstack ",
         workimage: <span class="material-symbols-outlined">work</span>,
-        tags: [{ tag: "React" }, { tag: "Javascript" }, { tag: "node.js" }, { tag: "Tailwind- css" }, { tag: "HTML" }],
+        tags: [{ tag: "React" }, { tag: "Javascript" }, { tag: "node.js" },  { tag: "express.js" },  { tag: "mongoDB" },{ tag: "Tailwind- css" }, { tag: "Git & Github" }],
       },
 
     ],
@@ -119,6 +119,13 @@ export const professionals = [
         position: "Lic. en Sistemas",
         workimage: <span class="material-symbols-outlined">school</span>,
         tags: [{ tag: "Programación" }, { tag: "Negocios" }],
+      },
+      {
+        period: "2015 - 2019",
+        company: "Instituto Privado Don Orione",
+        position: "Economía y administración de empresas",
+        workimage: <span class="material-symbols-outlined">school</span>,
+        tags: [{ tag: "Economía" }, { tag: "Administración" }, { tag: "Marketing" }, { tag: "Gestión de Proyectos" }],
       }
     ],
 

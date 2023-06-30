@@ -16,7 +16,7 @@ export const Education = () => {
         <div className="rounded-lg shadow w-full mt-5">
           {professional && (
             <>
-              <ul className="flex my-10 border border-[#53f] justify-center items-center flex-col gap-1">
+              <ul className="flex my-10  justify-center items-center flex-col gap-10">
                 {professional.education.map((education, index) => (
                   <FormacionItem
                     key={index}
